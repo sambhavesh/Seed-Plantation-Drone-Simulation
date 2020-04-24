@@ -155,10 +155,7 @@ way_p.close()
 cmd = Command( 0,0,0,mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT,mavutil.mavlink.MAV_CMD_NAV_WAYPOINT,0, 0, 0, 0, 0, 0,start_lat, start_lon,start_alt)
 cmds.add(cmd)
 #Upload clear message and command messages to vehicle.
-print("Uploading waypoints to vehicle..." ) 20.3429490123
-Distance to waypoint (2): 15.7119687615
-CRITICAL:autopilot:Reached Command #2
-Distance to waypoint (3): 59.
+print("Uploading waypoints to vehicle..." )
 cmds.upload()
 print("Arm and Takeoff")
 arm_and_takeoff(start_alt)
