@@ -64,9 +64,8 @@ def arm_and_takeoff(aTargetAltitude):
 
 	# Don't try to arm until autopilot is ready
 	while not vehicle.is_armable:
-		print(" Waiting for vehicle to initialise...")
+		logger.warning(" Waiting for vehicle to initialise...")
 		time.sleep(1)
-
 	# Set mode to GUIDED for arming and takeoff:
 	while (vehicle.mode.name != "GUIDED"):
 		vehicle.mode = VehicleMode("GUIDED")
@@ -75,7 +74,7 @@ def arm_and_takeoff(aTargetAltitude):
 	# Confirm vehicle armed before attempting to take off
 	while not vehicle.armed:
 		vehicle.armed = True
-		print(" Waiting for arming...")
+		logger.warning(" Waiting for arming...")
 		time.sleep(1)
 
 	print(" Taking off!")
@@ -240,7 +239,7 @@ while True:
 	logger.info('Distance to waypoint (%s): %s' % (nextwaypoint, distance_to_current_waypoint()))
 	if distance_to_current_waypoint()<1.5:
 		print("Dropping Seed")
-		logger.info("Dropping Seed")
+		logger.critical("Dropping Seed")
 	if nextwaypoint==line_count+1:
 		print("Exit 'standard' mission when start heading to final waypoint or start location")
 		logger.info("Exit 'standard' mission when start heading to final waypoint or start location")
@@ -248,7 +247,7 @@ while True:
 	time.sleep(1)
 
 print('Return to launch')
-logger.info("Return to launch")
+logger.critical("Return to launch")
 while (vehicle.mode.name != "RTL"):
 	vehicle.mode = VehicleMode("RTL")
 	time.sleep(0.1)
