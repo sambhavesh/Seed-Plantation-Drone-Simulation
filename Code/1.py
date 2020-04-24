@@ -197,9 +197,13 @@ cmds = vehicle.commands
 cmds.wait_ready()
 cmds = vehicle.commands
 cmds.clear()
-line_count = 0
+line_count = 0    #Variable that keep track of total commands
+
+#Add command for starting location:
 cmd = Command( 0,0,0,mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT,mavutil.mavlink.MAV_CMD_NAV_WAYPOINT,0, 0, 0, 0, 0, 0,start_lat, start_lon,start_alt)
 cmds.add(cmd)
+
+#Add command for all waypoints:
 with open(waypoint_file,"r") as way_p:
 	for pt in way_p:
 		current_line = pt.split(",")
@@ -214,8 +218,11 @@ with open(waypoint_file,"r") as way_p:
 
 		"""
 way_p.close()
+
+#Add command for returing to base:
 cmd = Command( 0,0,0,mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT,mavutil.mavlink.MAV_CMD_NAV_WAYPOINT,0, 0, 0, 0, 0, 0,start_lat, start_lon,start_alt)
 cmds.add(cmd)
+
 #Upload clear message and command messages to vehicle.
 print("Uploading waypoints to vehicle..." )
 logger.info("Uploading waypoints to vehicle...")
@@ -224,9 +231,9 @@ print("Arm and Takeoff")
 logger.info("Arm and Takeoff")
 arm_and_takeoff(start_alt)
 
-
 print("Starting mission")
 logger.info("Starting mission")
+
 # Reset mission set to first (0) waypoint
 vehicle.commands.next=0
 
@@ -235,8 +242,8 @@ while (vehicle.mode.name != "AUTO"):
     vehicle.mode = VehicleMode("AUTO")
     time.sleep(0.1)
 
-# Monitor mission  then RTL and quit:
 
+# Monitor mission then RTL (Return to launch) and quit:
 while True:
 	nextwaypoint=vehicle.commands.next
 	print('Distance to waypoint (%s): %s' % (nextwaypoint, distance_to_current_waypoint()))
