@@ -31,9 +31,9 @@ logger.addHandler(logFile_streamHandler)
 def get_distance_metres(aLocation1, aLocation2):
 	"""
 	Returns the ground distance in metres between two LocationGlobal objects.
-
 	This method is an approximation, and will not be accurate over large distances and close to the
-	earth's poles. It comes from the ArduPilot test code:
+	earth's poles.
+	Reference:
 	https://github.com/diydrones/ardupilot/blob/master/Tools/autotest/common.py
 	"""
 	dlat = aLocation2.lat - aLocation1.lat
@@ -59,7 +59,7 @@ def distance_to_current_waypoint():
 
 def arm_and_takeoff(aTargetAltitude):
 	"""
-	Arms vehicle and fly to aTargetAltitude.
+	Arms vehicle and fly to a target altitude.
 	"""
 
 	# Don't try to arm until autopilot is ready
@@ -70,14 +70,13 @@ def arm_and_takeoff(aTargetAltitude):
 	while (vehicle.mode.name != "GUIDED"):
 		vehicle.mode = VehicleMode("GUIDED")
 		time.sleep(0.1)
-
 	# Confirm vehicle armed before attempting to take off
 	while not vehicle.armed:
 		vehicle.armed = True
 		logger.warning(" Waiting for arming...")
 		time.sleep(1)
-
 	print(" Taking off!")
+	logger.info("Taking off!")
 	vehicle.simple_takeoff(aTargetAltitude) # Take off to target altitude
 
 	# Wait until the vehicle reaches a safe height
@@ -93,6 +92,9 @@ def arm_and_takeoff(aTargetAltitude):
 		time.sleep(1)
 
 def print_vechicle_attributes():
+	"""
+	This function list all the attributes of the vechicle and stores it in log file
+	"""
 	logger.info("Autopilot Firmware version: %s" % vehicle.version)
 	logger.info("Autopilot capabilities (supports ftp): %s" % vehicle.capabilities.ftp)
 	logger.info("Global Location:INFO:__main__: Key:BATT_CURR_PIN Value:12.0 %s" % vehicle.location.global_frame)
@@ -117,26 +119,22 @@ def print_vechicle_attributes():
 	logger.info("Armed: %s" % vehicle.armed)
 
 def print_vechicle_parameters():
+	"""
+	This function list all the parameters of the vechicle and stores it in log file
+	"""
 	logger.info ("Print all parameters (`vehicle.parameters`):")
 	for key, value in vehicle.parameters.iteritems():
 		logger.info (" Key:%s Value:%s" % (key,value))
 
-
-
-
 #-------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
 #Main body:
 
+start_lat = 0.0		#latitute variable
+start_lon = 0.0		#longitude variable
+start_alt = 0.0		#altitude variable
+waypoint_file = ""	#stores the waypoint file name
 
-
-start_lat = 0.0
-start_lon = 0.0
-start_alt = 0.0
-waypoint_file = ""
+#Takes the lat lon and alt value from USER
 while True:
 	try:
 		start_lat = float(input("Please enter the latitute of centre:\n"))
@@ -157,6 +155,8 @@ while True:
 		break
 	except:
 		logger.error("Oops!  That was no valid lat/lon or altitude.  Try again...")
+
+#Takes the waypoint file name from USER
 while True:
 	waypoint_file = raw_input("Enter the waypoint file name with extension:\n")
 	if os.path.exists(waypoint_file):
@@ -183,10 +183,10 @@ if not connection_string:
 	connection_string = sitl.connection_string()
 
 # Connect to the Vehicle
-
 print('Connecting to vehicle on: %s' % connection_string)
 logger.info('Connecting to vehicle on: %s' % connection_string)
 vehicle = connect(connection_string, wait_ready=True)
+
 #log vechicle attributes:
 print_vechicle_attributes()
 #log vechicle parameters:
@@ -209,6 +209,10 @@ with open(waypoint_file,"r") as way_p:
 		logger.debug ("Point: %f %f" %(lat, lon))
 		cmd = Command( 0,0,0,mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT,mavutil.mavlink.MAV_CMD_NAV_WAYPOINT,0, 0, 5, 0, 0, 0,lat, lon, start_alt)
 		cmds.add(cmd)
+		""""
+		Add the codes/ mechanism for dropping seed here. Depends on hardware
+
+		"""
 way_p.close()
 cmd = Command( 0,0,0,mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT,mavutil.mavlink.MAV_CMD_NAV_WAYPOINT,0, 0, 0, 0, 0, 0,start_lat, start_lon,start_alt)
 cmds.add(cmd)
@@ -257,16 +261,11 @@ print("Close vehicle object")
 logger.info("Close vehicle object")
 vehicle.close()
 
-
 # Shut down simulator if it was started.
 if sitl is not None:
 	sitl.stop()
-
 print("Completed...")
 logger.info("Completed...")
-
-
-
 
 '''
 sample input:
