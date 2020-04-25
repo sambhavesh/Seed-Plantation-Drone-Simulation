@@ -22,7 +22,7 @@ def get_location_metres(original_location, dNorth, dEast):
 	#New position in decimal degrees
 	newlat = original_location.lat + (dLat * 180/math.pi)
 	newlon = original_location.lon + (dLon * 180/math.pi)
-	new_location = POINT(newlat,newlon)
+	new_location = LAT_LON(newlon,newlat)
 	return new_location
 
 def get_distance_metres(aLocation1, aLocation2):
@@ -31,6 +31,50 @@ def get_distance_metres(aLocation1, aLocation2):
 	dlong = aLocation2.lon - aLocation1.lon
 	return math.sqrt((dlat*dlat) + (dlong*dlong)) * 1.113195e5
 
+def generate_points(start_point,edge_size,seed_distance,polygon_hull):
+
+    output_file = open("waypoint_concave.txt","w+")
+    func_tempVar1 = start_point
+    shapely_tempVar1 = Point(func_tempVar1.lon,func_tempVar1.lat)
+    if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
+		output_file.write(str(func_tempVar1.lat) + "," + str(func_tempVar1.lon) + '\n')
+
+    step_size = edge_size/seed_distance
+
+    for i in range (step_size/2):
+        func_tempVar2 = func_tempVar1
+        for j in range(step_size):
+            func_newpoint = get_location_metres(func_tempVar2, seed_distance, 0)
+            func_tempVar2 = func_newpoint
+            shapely_tempVar1 = Point(func_tempVar2.lon,func_tempVar2.lat)
+            if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
+        		output_file.write(str(func_tempVar2.lat) + "," + str(func_tempVar2.lon) + '\n')
+        func_shift1 = get_location_metres(func_tempVar2, 0, seed_distance)
+        func_tempVar2 = func_shift1
+        shapely_tempVar1 = Point(func_tempVar2.lon,func_tempVar2.lat)
+        if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
+            output_file.write(str(func_tempVar2.lat) + "," + str(func_tempVar2.lon) + '\n')
+
+        for j in range(step_size):
+            func_newpoint = get_location_metres(func_tempVar2, -seed_distance, 0)
+            func_tempVar2 = func_newpoint
+            shapely_tempVar1 = Point(func_tempVar2.lon,func_tempVar2.lat)
+            if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
+        		output_file.write(str(func_tempVar2.lat) + "," + str(func_tempVar2.lon) + '\n')
+
+        func_shift2 = get_location_metres(func_tempVar2, 0, seed_distance)
+        func_tempVar1 = func_shift2
+        shapely_tempVar1 = Point(func_tempVar1.lon,func_tempVar1.lat)
+        if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
+            output_file.write(str(func_tempVar1.lat) + "," + str(func_tempVar1.lon) + '\n')
+
+
+    for j in range(step_size):
+        func_newpoint = get_location_metres(func_tempVar1, seed_distance, 0)
+        func_tempVar1 = func_newpoint
+        shapely_tempVar1 = Point(func_tempVar1.lon,func_tempVar1.lat)
+        if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
+            output_file.write(str(func_tempVar1.lat) + "," + str(func_tempVar1.lon) + '\n')
 
 
 
@@ -38,7 +82,7 @@ def get_distance_metres(aLocation1, aLocation2):
 
 
 
-
+#------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -50,18 +94,28 @@ while True:
 	else:
 		print("Enter file does not exists. Please re enter correct file")
 		continue
+
+seed_distance = 0
+while True:
+	try:
+		seed_distance = int(input("Please enter the distance between two waypoints:\n"))
+		break
+	except:
+		print("Oops!  That was no valid distance.  Try again...")
 latlon_list = []
 with open(input_file,"r") as input_f:
     for line in input_f:
         current_line = line.split(",")
         latlon_list.append([float(current_line[1]),float(current_line[0])])
 latlon_num = np.array(latlon_list )#,dtype = np.float64)
-
+polygon_hull = Polygon(latlon_num)
 #print(latlon_list)
 # print(latlon_num)
 min_col = np.amin(latlon_num,axis = 0)
 max_col = np.amax(latlon_num,axis = 0)
 
+#print (min_col)
+#print(max_col)
 
 # min Long , min lat
 t1 = LAT_LON(min_col[0],min_col[1])
@@ -69,7 +123,6 @@ t1 = LAT_LON(min_col[0],min_col[1])
 t2 = LAT_LON(min_col[0],max_col[1])
 # max Long , min lat
 t3 = LAT_LON(max_col[0],min_col[1])
-cal_d = max(get_distance_metres(t1,t2),get_distance_metres(t1,t3))
 
 # print(t1.lat,t1.lon)
 # print(t2.lat,t2.lon)
@@ -77,9 +130,20 @@ cal_d = max(get_distance_metres(t1,t2),get_distance_metres(t1,t3))
 
 
 
+cal_d = max(get_distance_metres(t1,t2),get_distance_metres(t1,t3))
+# print(cal_d)
+total_step = math.ceil(cal_d/seed_distance)
+# print(total_step)
+if total_step%2 == 0:
+	cal_d = seed_distance*(total_step)
+else:
+	cal_d = seed_distance*(total_step+1)
 
 
+start_point = t1
+# print(start_point.lat,start_point.lon)
+# print(cal_d)
+# print(seed_distance)
+generate_points(start_point,int(cal_d),seed_distance,polygon_hull)
 
-
-#print (min_col)
-#print(max_col)
+print("\n   Waypoints are generated and stored in waypoint_square.txt file. \n")
