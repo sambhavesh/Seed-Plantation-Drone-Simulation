@@ -11,7 +11,14 @@ class LAT_LON:
 		self.lat = y
 
 def get_location_metres(original_location, dNorth, dEast):
+	"""
+	Returns a LAT_LON object containing the latitude/longitude `dNorth` and `dEast` metres from the specified `original_location`.
+	The function is useful when you want to move the vehicle around specifying locations relative to the current vehicle position.
+	This function is relatively accurate over small distances (10m within 1km) except close to the poles.
+	Reference:
+	http://gis.stackexchange.com/questions/2951/algorithm-for-offsetting-a-latitude-longitude-by-some-amount-of-meters
 
+	"""
 	#Radius of "spherical" earth
 	earth_radius=6378137.0
 
@@ -26,7 +33,13 @@ def get_location_metres(original_location, dNorth, dEast):
 	return new_location
 
 def get_distance_metres(aLocation1, aLocation2):
+	"""
+	Returns the ground distance in metres between two LAT_LON objects.
+	This method is an approximation, and will not be accurate over large distances and close to the earth's poles.
+	Reference:
+	https://github.com/diydrones/ardupilot/blob/master/Tools/autotest/common.py
 
+	"""
 	dlat = aLocation2.lat - aLocation1.lat
 	dlong = aLocation2.lon - aLocation1.lon
 	return math.sqrt((dlat*dlat) + (dlong*dlong)) * 1.113195e5
