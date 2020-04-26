@@ -137,12 +137,12 @@ waypoint_file = ""	#stores the waypoint file name
 #Takes the lat lon and alt value from USER
 while True:
 	try:
-		start_lat = float(input("Please enter the latitute of centre:\n"))
+		start_lat = float(input("Please enter the latitute of starting point:\n"))
 		logger.debug("USER entered latitute value: %s",str(start_lat))
 		if(start_lat<0 or start_lat>90):
 			print("Latitude value must be between 0 and 90")
 			continue
-		start_lon = float(input("Please enter the longitude of centre:\n"))
+		start_lon = float(input("Please enter the longitude of starting point:\n"))
 		logger.debug("USER entered longitude value: %s",str(start_lon))
 		if(start_lon<0 or start_lon>180):
 			print("Langitude value must be between 0 and 180")

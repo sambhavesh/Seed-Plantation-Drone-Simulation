@@ -33,7 +33,7 @@ def get_distance_metres(aLocation1, aLocation2):
 
 def generate_points(start_point,edge_size,seed_distance,polygon_hull):
 
-    output_file = open("waypoint_concave.txt","w+")
+    output_file = open("waypoint_convex.txt","w+")
     func_tempVar1 = start_point
     shapely_tempVar1 = Point(func_tempVar1.lon,func_tempVar1.lat)
     if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
