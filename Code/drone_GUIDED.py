@@ -96,10 +96,10 @@ def arm_and_takeoff(aTargetAltitude):
 		requiredAlt = aTargetAltitude*0.95
 		#Break and return from function just below target altitude.
 		if vehicle.location.global_relative_frame.alt>=requiredAlt:
-			print(" Reached target altitude of ~%f" % (aTargetAltitude))
-			logger.info(" Reached target altitude of ~%f" % (aTargetAltitude))
+			print("Reached target altitude of %f" % (aTargetAltitude))
+			logger.info("Reached target altitude of %f" % (aTargetAltitude))
 			break
-		logger.info(" Altitude: %f < %f" % (vehicle.location.global_relative_frame.alt,requiredAlt))
+		logger.info("Altitude: %f < %f" % (vehicle.location.global_relative_frame.alt,requiredAlt))
 		time.sleep(1)
 
 
@@ -142,8 +142,8 @@ def goto(targetLocation):
         vehicle_currentLocation = LAT_LON_ALT(vc_loc.lon,vc_loc.lat,vc_loc.alt)
         remainingDistance=get_distance_metres(vehicle_currentLocation, targetLocation)
         logger.info("Distance to target: %f" % (remainingDistance))
-        print("Distance to target: ~%f" % (remainingDistance))
-        if remainingDistance <= 5.0: #Just below target, in case of undershoot.
+        print("Distance to target: %f" % (remainingDistance))
+        if remainingDistance <= 1: #Just below target, in case of undershoot.
             logger.info("Reached target")
             while (vehicle.mode.name != "GUIDED"):
                 vehicle.mode = VehicleMode("GUIDED")
