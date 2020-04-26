@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from __future__ import print_function
-from dronekit import connect, Command, VehicleMode, LocationGlobalRelative
+from dronekit import connect, Command, VehicleMode, LocationGlobalRelative, LocationGlobal
 from pymavlink import mavutil
 import os
 import json, urllib, math
@@ -28,9 +28,9 @@ logger.addHandler(logFile_streamHandler)
 #-------------------------------------------------------------------------------------------------------------------------------------
 #Required function defination:
 class LAT_LON_ALT:
-	def __init__(self,x,y,z):
-		self.lon = x
-		self.lat = y
+    def __init__(self,x,y,z):
+        self.lon = x
+        self.lat = y
         self.alt = z
 
 def get_location_metres(original_location, dNorth, dEast):
@@ -86,7 +86,7 @@ def arm_and_takeoff(aTargetAltitude):
 		vehicle.armed = True
 		logger.warning(" Waiting for arming...")
 		time.sleep(1)
-	print(" Taking off!")
+	print("Taking off!")
 	logger.info("Taking off!")
 	vehicle.simple_takeoff(aTargetAltitude) # Take off to target altitude
 
@@ -127,20 +127,28 @@ def goto(targetLocation):
         0, 0)    # yaw, yaw_rate (not supported yet, ignored in GCS_Mavlink)
     """
     # send command to vehicle
+    logger.debug("Target location lat: %f , lon: %f , alt: %f" % (targetLocation.lat,targetLocation.lon,targetLocation.alt))
     vc_in_loc = vehicle.location.global_relative_frame
     vehicle_initialLocation = LAT_LON_ALT(vc_in_loc.lon,vc_in_loc.lat,vc_in_loc.alt)
     targetDistance = get_distance_metres(vehicle_initialLocation, targetLocation)
-    msg = vehicle.message_factory.set_position_target_global_int_encode( 0, 0, 0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT_INT, 0b0000111111111000, targetLocation.lat, targetLocation.lon, targetLocation.alt, 0, 0, 0, 0, 0, 0, 0, 0)
+    msg = vehicle.message_factory.set_position_target_global_int_encode( 0, 0, 0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT_INT, 0b0000111111111000, targetLocation.lat*1e7, targetLocation.lon*1e7, targetLocation.alt, 0, 0, 0, 0, 0, 0, 0, 0)
     vehicle.send_mavlink(msg)
-    while vehicle.mode.name=="GUIDED": #Stop action if we are no longer in guided mode.
+    # target = LocationGlobal(targetLocation.lat,targetLocation.lon,targetLocation.alt)
+    # vehicle.airspeed=15
+    # vehicle.simple_goto(target)
+    while True: #Stop action if we are no longer in guided mode.
         logger.debug("mode: %s" % vehicle.mode.name)
         vc_loc = vehicle.location.global_relative_frame
         vehicle_currentLocation = LAT_LON_ALT(vc_loc.lon,vc_loc.lat,vc_loc.alt)
         remainingDistance=get_distance_metres(vehicle_currentLocation, targetLocation)
-        logger.info("Distance to target: ", remainingDistance)
-        if remainingDistance<=targetDistance*0.01: #Just below target, in case of undershoot.
+        logger.info("Distance to target: %f" % (remainingDistance))
+        print("Distance to target: ~%f" % (remainingDistance))
+        if remainingDistance <= 5.0: #Just below target, in case of undershoot.
             logger.info("Reached target")
-            break;
+            while (vehicle.mode.name != "GUIDED"):
+                vehicle.mode = VehicleMode("GUIDED")
+                time.sleep(0.1)
+            break
         time.sleep(2)
 
 
@@ -151,14 +159,14 @@ def print_vechicle_attributes():
 	"""
 	logger.info("Autopilot Firmware version: %s" % vehicle.version)
 	logger.info("Autopilot capabilities (supports ftp): %s" % vehicle.capabilities.ftp)
-	logger.info("Global Location:INFO:__main__: Key:BATT_CURR_PIN Value:12.0 %s" % vehicle.location.global_frame)
+	logger.info("Global Location:%s" % vehicle.location.global_frame)
 	logger.info("Global Location (relative altitude): %s" % vehicle.location.global_relative_frame)
 	logger.info("Local Location: %s" % vehicle.location.local_frame)
 	logger.info("Attitude: %s" % vehicle.attitude)
 	logger.info("Velocity: %s" % vehicle.velocity)
 	logger.info("GPS: %s" % vehicle.gps_0)
 	logger.info("Groundspeed: %s" % vehicle.groundspeed)
-	logger.info("Airspeed: %sINFO:__main__:Distance to waypoint (2): 50.5458561177" % vehicle.airspeed)
+	logger.info("Airspeed: %s" % vehicle.airspeed)
 	logger.info("Gimbal status: %s" % vehicle.gimbal)
 	logger.info("Battery: %s" % vehicle.battery)
 	logger.info("EKF OK?: %s" % vehicle.ekf_ok)
@@ -186,9 +194,15 @@ def startMission(startingLocation):
     This function controls the planned mission of drone
     """
 
-
-
-
+    with open(waypoint_file,"r") as waypointFile:
+        for pt in waypointFile:
+            current_line = pt.split(",")
+            nextLocation = LAT_LON_ALT(float(current_line[1]),float(current_line[0]),startingLocation.alt)
+            logger.debug("Next location lat: %f , lon: %f , alt: %f",nextLocation.lat,nextLocation.lon,nextLocation.alt)
+            goto(nextLocation)
+            print("Dropping Seed")
+            logger.info("Dropping Seed")
+    waypointFile.close()
 #-------------------------------------------------------------------------------------------------------------------------------------
 #Main body:
 
@@ -199,17 +213,17 @@ waypoint_file = ""	#stores the waypoint file name
 while True:
 	try:
 		startingLocation.lat = float(input("Please enter the latitute of starting point:\n"))
-		logger.debug("USER entered latitute value: %s",str(start_lat))
+		logger.debug("USER entered latitute value: %s",str(startingLocation.lat))
 		if(startingLocation.lat<0 or startingLocation.lat>90):
 			print("Latitude value must be between 0 and 90")
 			continue
 		startingLocation.lon = float(input("Please enter the longitude of starting point:\n"))
-		logger.debug("USER entered longitude value: %s",str(start_lon))
+		logger.debug("USER entered longitude value: %s",str(startingLocation.lon))
 		if(startingLocation.lon<0 or startingLocation.lon>180):
 			print("Langitude value must be between 0 and 180")
 			continue
 		startingLocation.alt = float(input("Please enter the altitude for the drone:\n"))
-		logger.debug("USER entered altitude value: %s",str(start_alt))
+		logger.debug("USER entered altitude value: %s",str(startingLocation.alt))
 		if(startingLocation.alt<0):
 			print("Altitude value must be positive")
 			continue
@@ -240,7 +254,7 @@ sitl = None
 #Start SITL if no connection string specified
 if not connection_string:
 	import dronekit_sitl
-	sitl = dronekit_sitl.start_default(lat=start_lat,lon=start_lon)
+	sitl = dronekit_sitl.start_default(lat=startingLocation.lat,lon=startingLocation.lon)
 	connection_string = sitl.connection_string()
 
 # Connect to the Vehicle
