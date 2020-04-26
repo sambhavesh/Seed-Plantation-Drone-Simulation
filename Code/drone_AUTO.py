@@ -64,7 +64,7 @@ def arm_and_takeoff(aTargetAltitude):
 
 	# Don't try to arm until autopilot is ready
 	while not vehicle.is_armable:
-		logger.warning(" Waiting for vehicle to initialise...")
+		logger.warning("Waiting for vehicle to initialise...")
 		time.sleep(1)
 	# Set mode to GUIDED for arming and takeoff:
 	while (vehicle.mode.name != "GUIDED"):
@@ -73,9 +73,9 @@ def arm_and_takeoff(aTargetAltitude):
 	# Confirm vehicle armed before attempting to take off
 	while not vehicle.armed:
 		vehicle.armed = True
-		logger.warning(" Waiting for arming...")
+		logger.warning("Waiting for arming...")
 		time.sleep(1)
-	print(" Taking off!")
+	print("Taking off!")
 	logger.info("Taking off!")
 	vehicle.simple_takeoff(aTargetAltitude) # Take off to target altitude
 
@@ -85,10 +85,10 @@ def arm_and_takeoff(aTargetAltitude):
 		requiredAlt = aTargetAltitude*0.95
 		#Break and return from function just below target altitude.
 		if vehicle.location.global_relative_frame.alt>=requiredAlt:
-			print(" Reached target altitude of ~%f" % (aTargetAltitude))
-			logger.info(" Reached target altitude of ~%f" % (aTargetAltitude))
+			print("Reached target altitude of ~%f" % (aTargetAltitude))
+			logger.info("Reached target altitude of ~%f" % (aTargetAltitude))
 			break
-		logger.info(" Altitude: %f < %f" % (vehicle.location.global_relative_frame.alt,requiredAlt))
+		logger.info("Altitude: %f < %f" % (vehicle.location.global_relative_frame.alt,requiredAlt))
 		time.sleep(1)
 
 def print_vechicle_attributes():
@@ -97,14 +97,14 @@ def print_vechicle_attributes():
 	"""
 	logger.info("Autopilot Firmware version: %s" % vehicle.version)
 	logger.info("Autopilot capabilities (supports ftp): %s" % vehicle.capabilities.ftp)
-	logger.info("Global Location:INFO:__main__: Key:BATT_CURR_PIN Value:12.0 %s" % vehicle.location.global_frame)
+	logger.info("Global Location: %s" % vehicle.location.global_frame)
 	logger.info("Global Location (relative altitude): %s" % vehicle.location.global_relative_frame)
 	logger.info("Local Location: %s" % vehicle.location.local_frame)
 	logger.info("Attitude: %s" % vehicle.attitude)
 	logger.info("Velocity: %s" % vehicle.velocity)
 	logger.info("GPS: %s" % vehicle.gps_0)
 	logger.info("Groundspeed: %s" % vehicle.groundspeed)
-	logger.info("Airspeed: %sINFO:__main__:Distance to waypoint (2): 50.5458561177" % vehicle.airspeed)
+	logger.info("Airspeed: %s" % vehicle.airspeed)
 	logger.info("Gimbal status: %s" % vehicle.gimbal)
 	logger.info("Battery: %s" % vehicle.battery)
 	logger.info("EKF OK?: %s" % vehicle.ekf_ok)
