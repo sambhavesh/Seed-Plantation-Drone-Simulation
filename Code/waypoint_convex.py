@@ -46,48 +46,48 @@ def get_distance_metres(aLocation1, aLocation2):
 
 def generate_points(start_point,edge_size,seed_distance,polygon_hull):
 
-    output_file = open("waypoint_convex.txt","w+")
-    func_tempVar1 = start_point
-    shapely_tempVar1 = Point(func_tempVar1.lon,func_tempVar1.lat)
-    if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
+	output_file = open("waypoint_convex.txt","w+")
+	func_tempVar1 = start_point
+	shapely_tempVar1 = Point(func_tempVar1.lon,func_tempVar1.lat)
+	if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
 		output_file.write(str(func_tempVar1.lat) + "," + str(func_tempVar1.lon) + '\n')
 
-    step_size = edge_size/seed_distance
+		step_size = edge_size/seed_distance
 
-    for i in range (step_size/2):
-        func_tempVar2 = func_tempVar1
-        for j in range(step_size):
-            func_newpoint = get_location_metres(func_tempVar2, seed_distance, 0)
-            func_tempVar2 = func_newpoint
-            shapely_tempVar1 = Point(func_tempVar2.lon,func_tempVar2.lat)
+	for i in range (step_size/2):
+		func_tempVar2 = func_tempVar1
+		for j in range(step_size):
+			func_newpoint = get_location_metres(func_tempVar2, seed_distance, 0)
+			func_tempVar2 = func_newpoint
+			shapely_tempVar1 = Point(func_tempVar2.lon,func_tempVar2.lat)
 			if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
 				output_file.write(str(func_tempVar2.lat) + "," + str(func_tempVar2.lon) + '\n')
-        func_shift1 = get_location_metres(func_tempVar2, 0, seed_distance)
-        func_tempVar2 = func_shift1
-        shapely_tempVar1 = Point(func_tempVar2.lon,func_tempVar2.lat)
-        if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
-            output_file.write(str(func_tempVar2.lat) + "," + str(func_tempVar2.lon) + '\n')
+		func_shift1 = get_location_metres(func_tempVar2, 0, seed_distance)
+		func_tempVar2 = func_shift1
+		shapely_tempVar1 = Point(func_tempVar2.lon,func_tempVar2.lat)
+		if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
+			output_file.write(str(func_tempVar2.lat) + "," + str(func_tempVar2.lon) + '\n')
 
-        for j in range(step_size):
-            func_newpoint = get_location_metres(func_tempVar2, -seed_distance, 0)
-            func_tempVar2 = func_newpoint
-            shapely_tempVar1 = Point(func_tempVar2.lon,func_tempVar2.lat)
-            if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
-        		output_file.write(str(func_tempVar2.lat) + "," + str(func_tempVar2.lon) + '\n')
+		for j in range(step_size):
+			func_newpoint = get_location_metres(func_tempVar2, -seed_distance, 0)
+			func_tempVar2 = func_newpoint
+			shapely_tempVar1 = Point(func_tempVar2.lon,func_tempVar2.lat)
+			if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
+				output_file.write(str(func_tempVar2.lat) + "," + str(func_tempVar2.lon) + '\n')
 
-        func_shift2 = get_location_metres(func_tempVar2, 0, seed_distance)
-        func_tempVar1 = func_shift2
-        shapely_tempVar1 = Point(func_tempVar1.lon,func_tempVar1.lat)
-        if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
-            output_file.write(str(func_tempVar1.lat) + "," + str(func_tempVar1.lon) + '\n')
+		func_shift2 = get_location_metres(func_tempVar2, 0, seed_distance)
+		func_tempVar1 = func_shift2
+		shapely_tempVar1 = Point(func_tempVar1.lon,func_tempVar1.lat)
+		if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
+			output_file.write(str(func_tempVar1.lat) + "," + str(func_tempVar1.lon) + '\n')
 
 
-    for j in range(step_size):
-        func_newpoint = get_location_metres(func_tempVar1, seed_distance, 0)
-        func_tempVar1 = func_newpoint
-        shapely_tempVar1 = Point(func_tempVar1.lon,func_tempVar1.lat)
-        if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
-            output_file.write(str(func_tempVar1.lat) + "," + str(func_tempVar1.lon) + '\n')
+	for j in range(step_size):
+		func_newpoint = get_location_metres(func_tempVar1, seed_distance, 0)
+		func_tempVar1 = func_newpoint
+		shapely_tempVar1 = Point(func_tempVar1.lon,func_tempVar1.lat)
+		if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
+			output_file.write(str(func_tempVar1.lat) + "," + str(func_tempVar1.lon) + '\n')
 
 
 
@@ -117,9 +117,9 @@ while True:
 		print("Oops!  That was no valid distance.  Try again...")
 latlon_list = []
 with open(input_file,"r") as input_f:
-    for line in input_f:
-        current_line = line.split(",")
-        latlon_list.append([float(current_line[1]),float(current_line[0])])
+	for line in input_f:
+		current_line = line.split(",")
+		latlon_list.append([float(current_line[1]),float(current_line[0])])
 latlon_num = np.array(latlon_list )#,dtype = np.float64)
 polygon_hull = Polygon(latlon_num)
 #print(latlon_list)
