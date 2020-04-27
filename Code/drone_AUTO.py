@@ -91,9 +91,9 @@ def arm_and_takeoff(aTargetAltitude):
 		logger.info("Altitude: %f < %f" % (vehicle.location.global_relative_frame.alt,requiredAlt))
 		time.sleep(1)
 
-def print_vechicle_attributes():
+def print_vehicle_attributes():
 	"""
-	This function list all the attributes of the vechicle and stores it in log file
+	This function list all the attributes of the vehicle and stores it in log file
 	"""
 	logger.info("Autopilot Firmware version: %s" % vehicle.version)
 	logger.info("Autopilot capabilities (supports ftp): %s" % vehicle.capabilities.ftp)
@@ -118,9 +118,9 @@ def print_vechicle_attributes():
 	logger.info("Mode: %s" % vehicle.mode.name)
 	logger.info("Armed: %s" % vehicle.armed)
 
-def print_vechicle_parameters():
+def print_vehicle_parameters():
 	"""
-	This function list all the parameters of the vechicle and stores it in log file
+	This function list all the parameters of the vehicle and stores it in log file
 	"""
 	logger.info ("Print all parameters (`vehicle.parameters`):")
 	for key, value in vehicle.parameters.iteritems():
@@ -187,10 +187,10 @@ print('Connecting to vehicle on: %s' % connection_string)
 logger.info('Connecting to vehicle on: %s' % connection_string)
 vehicle = connect(connection_string, wait_ready=True)
 
-#log vechicle attributes:
-print_vechicle_attributes()
-#log vechicle parameters:
-print_vechicle_parameters()
+#log vehicle attributes:
+print_vehicle_attributes()
+#log vehicle parameters:
+print_vehicle_parameters()
 
 # Now download the vehicle waypoints
 cmds = vehicle.commands
