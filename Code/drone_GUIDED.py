@@ -38,8 +38,8 @@ def get_location_metres(original_location, dNorth, dEast):
 	Returns a LAT_LON_ALT object containing the latitude/longitude and altitude `dNorth` and `dEast` metres from the specified `original_location`.
 	The function is useful when you want to move the vehicle around specifying locations relative to the current vehicle position.
 	This function is relatively accurate over small distances (10m within 1km) except close to the poles.
-    The function does not change the altitude value
-    Reference:
+	The function does not change the altitude value
+	Reference:
 	http://gis.stackexchange.com/questions/2951/algorithm-for-offsetting-a-latitude-longitude-by-some-amount-of-meters
 
 	"""
