@@ -52,8 +52,7 @@ def generate_points(start_point,edge_size,seed_distance,polygon_hull):
 	if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
 		output_file.write(str(func_tempVar1.lat) + "," + str(func_tempVar1.lon) + '\n')
 
-		step_size = edge_size/seed_distance
-
+	step_size = edge_size/seed_distance
 	for i in range (step_size/2):
 		func_tempVar2 = func_tempVar1
 		for j in range(step_size):
