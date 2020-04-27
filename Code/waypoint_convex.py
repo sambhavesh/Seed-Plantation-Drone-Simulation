@@ -60,8 +60,8 @@ def generate_points(start_point,edge_size,seed_distance,polygon_hull):
             func_newpoint = get_location_metres(func_tempVar2, seed_distance, 0)
             func_tempVar2 = func_newpoint
             shapely_tempVar1 = Point(func_tempVar2.lon,func_tempVar2.lat)
-            if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
-        		output_file.write(str(func_tempVar2.lat) + "," + str(func_tempVar2.lon) + '\n')
+			if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
+				output_file.write(str(func_tempVar2.lat) + "," + str(func_tempVar2.lon) + '\n')
         func_shift1 = get_location_metres(func_tempVar2, 0, seed_distance)
         func_tempVar2 = func_shift1
         shapely_tempVar1 = Point(func_tempVar2.lon,func_tempVar2.lat)
