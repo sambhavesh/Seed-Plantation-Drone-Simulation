@@ -239,8 +239,8 @@ vehicle.commands.next=0
 
 # Set mode to AUTO to start mission:
 while (vehicle.mode.name != "AUTO"):
-    vehicle.mode = VehicleMode("AUTO")
-    time.sleep(0.1)
+	vehicle.mode = VehicleMode("AUTO")
+	time.sleep(0.1)
 
 
 # Monitor mission then RTL (Return to launch) and quit:
