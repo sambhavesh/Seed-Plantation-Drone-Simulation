@@ -12,7 +12,7 @@ import logging , logging.handlers
 #----------------------------------------------------------------------------------------------------------------------------------
 #logging configuration:
 
-logging.basicConfig(filename = "Master.log" , level = logging.DEBUG , format = "%(levelname)s: %(filename)s: %(module)s: %(funcName)s: %(lineno)d: 			%(message)s")
+logging.basicConfig(filename = "Master.log" , level = logging.DEBUG , format = "%(levelname)s: %(filename)s: %(funcName)s: %(lineno)d: 			%(message)s")
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 logFile_handler = logging.FileHandler("drone_seed_AUTO.log")
