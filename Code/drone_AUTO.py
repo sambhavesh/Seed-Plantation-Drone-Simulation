@@ -15,11 +15,11 @@ import logging , logging.handlers
 logging.basicConfig(filename = "Master.log" , level = logging.DEBUG , format = "%(levelname)s: %(filename)s: %(module)s: %(funcName)s: %(lineno)d: 			%(message)s")
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
-logFile_handler = logging.FileHandler("drone_seed.log")
+logFile_handler = logging.FileHandler("drone_seed_AUTO.log")
 logFile_handler.setLevel(logging.DEBUG)
 logFile_streamHandler = logging.StreamHandler()
 logFile_streamHandler.setLevel(logging.ERROR)
-logging_formatter = logging.Formatter("%(levelname)s: %(filename)s: %(module)s: %(funcName)s: %(lineno)d: 			%(message)s")
+logging_formatter = logging.Formatter("%(levelname)s: %(filename)s: %(funcName)s: %(lineno)d: 			%(message)s")
 logFile_handler.setFormatter(logging_formatter)
 logFile_streamHandler.setFormatter(logging_formatter)
 logger.addHandler(logFile_handler)
@@ -85,8 +85,8 @@ def arm_and_takeoff(aTargetAltitude):
 		requiredAlt = aTargetAltitude*0.95
 		#Break and return from function just below target altitude.
 		if vehicle.location.global_relative_frame.alt>=requiredAlt:
-			print("Reached target altitude of ~%f" % (aTargetAltitude))
-			logger.info("Reached target altitude of ~%f" % (aTargetAltitude))
+			print("Reached target altitude of %f" % (aTargetAltitude))
+			logger.info("Reached target altitude of %f" % (aTargetAltitude))
 			break
 		logger.info("Altitude: %f < %f" % (vehicle.location.global_relative_frame.alt,requiredAlt))
 		time.sleep(1)
