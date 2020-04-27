@@ -28,10 +28,10 @@ logger.addHandler(logFile_streamHandler)
 #-------------------------------------------------------------------------------------------------------------------------------------
 #Required function defination:
 class LAT_LON_ALT:
-    def __init__(self,x,y,z):
-        self.lon = x
-        self.lat = y
-        self.alt = z
+	def __init__(self,x,y,z):
+		self.lon = x
+		self.lat = y
+		self.alt = z
 
 def get_location_metres(original_location, dNorth, dEast):
 	"""
@@ -104,52 +104,52 @@ def arm_and_takeoff(aTargetAltitude):
 
 
 def goto(targetLocation):
-    """
-    Send SET_POSITION_TARGET_GLOBAL_INT command to request the vehicle fly to a specified LocationGlobal.
+	"""
+	Send SET_POSITION_TARGET_GLOBAL_INT command to request the vehicle fly to a specified LocationGlobal.
 
-    For more information see: https://pixhawk.ethz.ch/mavlink/#SET_POSITION_TARGET_GLOBAL_INT
+	For more information see: https://pixhawk.ethz.ch/mavlink/#SET_POSITION_TARGET_GLOBAL_INT
 
-    See the above link for information on the type_mask (0=enable, 1=ignore).
-    At time of writing, acceleration and yaw bits are ignored.
+	See the above link for information on the type_mask (0=enable, 1=ignore).
+	At time of writing, acceleration and yaw bits are ignored.
 
-    msg = vehicle.message_factory.set_position_target_global_int_encode(
-        0,       # time_boot_ms (not used)
-        0, 0,    # target system, target component
-        mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT_INT, # frame
-        0b0000111111111000, # type_mask (only speeds enabled)
-        aLocation.lat, # lat_int - X Position in WGS84 frame in 1e7 * meters
-        aLocation.lon, # lon_int - Y Position in WGS84 frame in 1e7 * meters
-        aLocation.alt, # alt - Altitude in meters in AMSL altitude, not WGS84 if absolute or relative, above terrain if GLOBAL_TERRAIN_ALT_INT
-        0, # X velocity in NED frame in m/s
-        0, # Y velocity in NED frame in m/s
-        0, # Z velocity in NED frame in m/s
-        0, 0, 0, # afx, afy, afz acceleration (not supported yet, ignored in GCS_Mavlink)
-        0, 0)    # yaw, yaw_rate (not supported yet, ignored in GCS_Mavlink)
-    """
-    # send command to vehicle
-    logger.debug("Target location lat: %f , lon: %f , alt: %f" % (targetLocation.lat,targetLocation.lon,targetLocation.alt))
-    vc_in_loc = vehicle.location.global_relative_frame
-    vehicle_initialLocation = LAT_LON_ALT(vc_in_loc.lon,vc_in_loc.lat,vc_in_loc.alt)
-    targetDistance = get_distance_metres(vehicle_initialLocation, targetLocation)
-    msg = vehicle.message_factory.set_position_target_global_int_encode( 0, 0, 0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT_INT, 0b0000111111111000, targetLocation.lat*1e7, targetLocation.lon*1e7, targetLocation.alt, 0, 0, 0, 0, 0, 0, 0, 0)
-    vehicle.send_mavlink(msg)
-    # target = LocationGlobal(targetLocation.lat,targetLocation.lon,targetLocation.alt)
-    # vehicle.airspeed=15
-    # vehicle.simple_goto(target)
-    while True: #Stop action if we are no longer in guided mode.
-        logger.debug("mode: %s" % vehicle.mode.name)
-        vc_loc = vehicle.location.global_relative_frame
-        vehicle_currentLocation = LAT_LON_ALT(vc_loc.lon,vc_loc.lat,vc_loc.alt)
-        remainingDistance=get_distance_metres(vehicle_currentLocation, targetLocation)
-        logger.info("Distance to target: %f" % (remainingDistance))
-        print("Distance to target: %f" % (remainingDistance))
-        if remainingDistance <= 1: #Just below target, in case of undershoot.
-            logger.info("Reached target")
-            while (vehicle.mode.name != "GUIDED"):
-                vehicle.mode = VehicleMode("GUIDED")
-                time.sleep(0.1)
-            break
-        time.sleep(2)
+	msg = vehicle.message_factory.set_position_target_global_int_encode(
+		0,       # time_boot_ms (not used)
+		0, 0,    # target system, target component
+		mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT_INT, # frame
+		0b0000111111111000, # type_mask (only speeds enabled)
+		aLocation.lat, # lat_int - X Position in WGS84 frame in 1e7 * meters
+		aLocation.lon, # lon_int - Y Position in WGS84 frame in 1e7 * meters
+		aLocation.alt, # alt - Altitude in meters in AMSL altitude, not WGS84 if absolute or relative, above terrain if GLOBAL_TERRAIN_ALT_INT
+		0, # X velocity in NED frame in m/s
+		0, # Y velocity in NED frame in m/s
+		0, # Z velocity in NED frame in m/s
+		0, 0, 0, # afx, afy, afz acceleration (not supported yet, ignored in GCS_Mavlink)
+		0, 0)    # yaw, yaw_rate (not supported yet, ignored in GCS_Mavlink)
+	"""
+	# send command to vehicle
+	logger.debug("Target location lat: %f , lon: %f , alt: %f" % (targetLocation.lat,targetLocation.lon,targetLocation.alt))
+	vc_in_loc = vehicle.location.global_relative_frame
+	vehicle_initialLocation = LAT_LON_ALT(vc_in_loc.lon,vc_in_loc.lat,vc_in_loc.alt)
+	targetDistance = get_distance_metres(vehicle_initialLocation, targetLocation)
+	msg = vehicle.message_factory.set_position_target_global_int_encode( 0, 0, 0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT_INT, 0b0000111111111000, targetLocation.lat*1e7, targetLocation.lon*1e7, targetLocation.alt, 0, 0, 0, 0, 0, 0, 0, 0)
+	vehicle.send_mavlink(msg)
+	# target = LocationGlobal(targetLocation.lat,targetLocation.lon,targetLocation.alt)
+	# vehicle.airspeed=15
+	# vehicle.simple_goto(target)
+	while True: #Stop action if we are no longer in guided mode.
+		logger.debug("mode: %s" % vehicle.mode.name)
+		vc_loc = vehicle.location.global_relative_frame
+		vehicle_currentLocation = LAT_LON_ALT(vc_loc.lon,vc_loc.lat,vc_loc.alt)
+		remainingDistance=get_distance_metres(vehicle_currentLocation, targetLocation)
+		logger.info("Distance to target: %f" % (remainingDistance))
+		print("Distance to target: %f" % (remainingDistance))
+		if remainingDistance <= 1: #Just below target, in case of undershoot.
+			logger.info("Reached target")
+			while (vehicle.mode.name != "GUIDED"):
+				vehicle.mode = VehicleMode("GUIDED")
+				time.sleep(0.1)
+			break
+		time.sleep(2)
 
 
 
@@ -190,19 +190,19 @@ def print_vechicle_parameters():
 
 
 def startMission(startingLocation):
-    """
-    This function controls the planned mission of drone
-    """
+	"""
+	This function controls the planned mission of drone
+	"""
 
-    with open(waypoint_file,"r") as waypointFile:
-        for pt in waypointFile:
-            current_line = pt.split(",")
-            nextLocation = LAT_LON_ALT(float(current_line[1]),float(current_line[0]),startingLocation.alt)
-            logger.debug("Next location lat: %f , lon: %f , alt: %f",nextLocation.lat,nextLocation.lon,nextLocation.alt)
-            goto(nextLocation)
-            print("Dropping Seed")
-            logger.info("Dropping Seed")
-    waypointFile.close()
+	with open(waypoint_file,"r") as waypointFile:
+		for pt in waypointFile:
+			current_line = pt.split(",")
+			nextLocation = LAT_LON_ALT(float(current_line[1]),float(current_line[0]),startingLocation.alt)
+			logger.debug("Next location lat: %f , lon: %f , alt: %f",nextLocation.lat,nextLocation.lon,nextLocation.alt)
+			goto(nextLocation)
+			print("Dropping Seed")
+			logger.info("Dropping Seed")
+	waypointFile.close()
 #-------------------------------------------------------------------------------------------------------------------------------------
 #Main body:
 
