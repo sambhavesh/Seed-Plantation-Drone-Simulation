@@ -1,0 +1,1296 @@
+DEBUG: drone_AUTO.py: <module>: 141: 			USER entered latitute value: 10.0
+DEBUG: drone_AUTO.py: <module>: 146: 			USER entered longitude value: 10.0
+DEBUG: drone_AUTO.py: <module>: 151: 			USER entered altitude value: 30.0
+INFO: drone_AUTO.py: <module>: 187: 			Connecting to vehicle on: udp:127.0.0.1:14551
+CRITICAL: __init__.py: statustext_listener: 1065: 			APM:Copter V3.3 (d6053245)
+CRITICAL: __init__.py: statustext_listener: 1065: 			Frame: QUAD
+DEBUG: __init__.py: default_still_waiting_callback: 3082: 			Still waiting for data from vehicle: parameters
+DEBUG: __init__.py: default_still_waiting_callback: 3082: 			Still waiting for data from vehicle: parameters
+DEBUG: __init__.py: default_still_waiting_callback: 3082: 			Still waiting for data from vehicle: parameters
+DEBUG: __init__.py: default_still_waiting_callback: 3082: 			Still waiting for data from vehicle: parameters
+DEBUG: __init__.py: default_still_waiting_callback: 3082: 			Still waiting for data from vehicle: parameters
+DEBUG: __init__.py: default_still_waiting_callback: 3082: 			Still waiting for data from vehicle: parameters
+DEBUG: __init__.py: default_still_waiting_callback: 3082: 			Still waiting for data from vehicle: parameters
+DEBUG: __init__.py: default_still_waiting_callback: 3082: 			Still waiting for data from vehicle: parameters
+DEBUG: __init__.py: default_still_waiting_callback: 3082: 			Still waiting for data from vehicle: parameters
+DEBUG: __init__.py: default_still_waiting_callback: 3082: 			Still waiting for data from vehicle: parameters
+INFO: drone_AUTO.py: print_vehicle_attributes: 98: 			Autopilot Firmware version: APM:Copter-3.3.0
+INFO: drone_AUTO.py: print_vehicle_attributes: 99: 			Autopilot capabilities (supports ftp): False
+INFO: drone_AUTO.py: print_vehicle_attributes: 100: 			Global Location: LocationGlobal:lat=10.0,lon=10.0,alt=None
+INFO: drone_AUTO.py: print_vehicle_attributes: 101: 			Global Location (relative altitude): LocationGlobalRelative:lat=10.0,lon=10.0,alt=0.0
+INFO: drone_AUTO.py: print_vehicle_attributes: 102: 			Local Location: LocationLocal:north=None,east=None,down=None
+INFO: drone_AUTO.py: print_vehicle_attributes: 103: 			Attitude: Attitude:pitch=0.00139206054155,yaw=-3.13637590408,roll=0.00165106717031
+INFO: drone_AUTO.py: print_vehicle_attributes: 104: 			Velocity: [0.02, -0.03, 0.0]
+INFO: drone_AUTO.py: print_vehicle_attributes: 105: 			GPS: GPSInfo:fix=3,num_sat=10
+INFO: drone_AUTO.py: print_vehicle_attributes: 106: 			Groundspeed: 0.0
+INFO: drone_AUTO.py: print_vehicle_attributes: 107: 			Airspeed: 0.0
+INFO: drone_AUTO.py: print_vehicle_attributes: 108: 			Gimbal status: Gimbal: pitch=None, roll=None, yaw=None
+INFO: drone_AUTO.py: print_vehicle_attributes: 109: 			Battery: Battery:voltage=12.587,current=0.0,level=100
+INFO: drone_AUTO.py: print_vehicle_attributes: 110: 			EKF OK?: True
+INFO: drone_AUTO.py: print_vehicle_attributes: 111: 			Last Heartbeat: 0.605894084
+INFO: drone_AUTO.py: print_vehicle_attributes: 112: 			Rangefinder: Rangefinder: distance=None, voltage=None
+INFO: drone_AUTO.py: print_vehicle_attributes: 113: 			Rangefinder distance: None
+INFO: drone_AUTO.py: print_vehicle_attributes: 114: 			Rangefinder voltage: None
+INFO: drone_AUTO.py: print_vehicle_attributes: 115: 			Heading: 180
+INFO: drone_AUTO.py: print_vehicle_attributes: 116: 			Is Armable?: True
+INFO: drone_AUTO.py: print_vehicle_attributes: 117: 			System status: STANDBY
+INFO: drone_AUTO.py: print_vehicle_attributes: 118: 			Mode: STABILIZE
+INFO: drone_AUTO.py: print_vehicle_attributes: 119: 			Armed: False
+INFO: drone_AUTO.py: print_vehicle_parameters: 125: 			Print all parameters (`vehicle.parameters`):
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC7_REV Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:GPS_INJECT_TO Value:127.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FLTMODE1 Value:7.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FLTMODE3 Value:6.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FLTMODE2 Value:9.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FLTMODE5 Value:5.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FLTMODE4 Value:3.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FLTMODE6 Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC5_REV Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_GLITCH_RAD Value:25.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_VEL_GATE Value:5.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:CH9_OPT Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_WIND_TURB Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_ARSP_FAIL Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIMPLE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC2_MAX Value:2000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_JSTICK_SPD Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:ACRO_EXPO Value:0.300000011921
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_ANGMIN_ROL Value:-4500.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_BATT_VOLTAGE Value:12.6000003815
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_TYPE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_HGT_GATE Value:10.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_DEV_ID3 Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_DEV_ID2 Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND2_SETTLE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND_PWRRNG Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC2_REV Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:THR_MIN Value:130.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:BATT_AMP_OFFSET Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_DRIFT_TIME Value:5.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND2_FUNCTION Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND_MIN_CM Value:20.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:THR_MID Value:500.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_WIND_PNOISE Value:0.10000000149
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND_SETTLE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:ACRO_RP_P Value:4.5
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_GPS_HZ Value:5.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR3_POSITION Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:WPNAV_LOIT_SPEED Value:500.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC3_MIN Value:1000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RALLY_TOTAL Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_GPS_DELAY Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:STB_PIT_P Value:4.5
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MOT_THST_BAT_MIN Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC3_REV Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FENCE_ACTION Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_GYRO_PNOISE Value:0.0149999996647
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC4_DZ Value:40.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_MAG_ERROR Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:LAND_REPOSITION Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:CH11_OPT Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:GPS_MIN_DGPS Value:100.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:WPNAV_LOIT_MAXA Value:250.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND_STOP_PIN Value:-1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:CHUTE_SERVO_ON Value:1300.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND_TYPE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:GCS_PID_MASK Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC6_REV Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RTL_ALT Value:1500.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SERIAL4_PROTOCOL Value:5.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RTL_LOIT_TIME Value:5000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC4_MAX Value:2000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SERIAL2_BAUD Value:57.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_GBIAS_PNOISE Value:9.99999997475e-07
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FS_BATT_MAH Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:GPS_GNSS_MODE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RSSI_RANGE Value:5.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SERIAL1_BAUD Value:57.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RTL_CLIMB_MIN Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC3_TRIM Value:1500.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND_MAX_CM Value:700.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_FLOW_RATE Value:10.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FS_EKF_ACTION Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MOT_THST_EXPO Value:0.649999976158
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FLOW_ENABLE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RELAY_PIN Value:13.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:TERRAIN_ENABLE Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_MAGB_PNOISE Value:0.000300000014249
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:BATT_VOLT_PIN Value:13.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_ANGMIN_PAN Value:-4500.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR0_RAW_CTRL Value:4.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC5_DZ Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_ACC_PNOISE Value:0.25
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FENCE_RADIUS Value:150.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_OFS3_Y Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_OFS3_X Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SUPER_SIMPLE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_OFS3_Z Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR3_RAW_CTRL Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_GYR_RND Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SYSID_SW_MREV Value:120.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_OFS2_X Value:5.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_OFS2_Y Value:13.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_OFS2_Z Value:-18.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_RC_FAIL Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:GND_ABS_PRESS Value:101325.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC1_MAX Value:2000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:WPNAV_ACCEL Value:100.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC7_MIN Value:1000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:GPS_NAVFILTER Value:8.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FENCE_MARGIN Value:2.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:ACRO_BAL_ROLL Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:AHRS_TRIM_Z Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:AHRS_TRIM_Y Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:AHRS_TRIM_X Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:CHUTE_TYPE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC10_MAX Value:1900.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_DEV_ID Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND2_MAX_CM Value:700.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:GND_TEMP Value:30.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC7_TRIM Value:1500.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC8_MIN Value:1000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_STAB_TILT Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:BATT2_CURR_PIN Value:12.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:TUNE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FENCE_ALT_MAX Value:100.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC10_FUNCTION Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:ACCEL_Z_P Value:0.5
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:ACCEL_Z_I Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_ACC3OFFS_X Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_ACC3OFFS_Y Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_ACC3OFFS_Z Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:ACCEL_Z_D Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:TERRAIN_SPACING Value:100.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_FLOW_DELAY Value:10.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SERIAL2_PROTOCOL Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:TUNE_HIGH Value:1000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_MAG_RND Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_WIND_DELAY Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_VELNE_NOISE Value:0.5
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_OFF_GYRO_Z Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_OFF_GYRO_X Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_OFF_GYRO_Y Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:PILOT_ACCEL_Z Value:250.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR1_EXT_STAT Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC8_FUNCTION Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_ACCSCAL_X Value:1.00100004673
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:CHUTE_SERVO_OFF Value:1100.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:PILOT_THR_FILT Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:STB_RLL_P Value:4.5
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:CHUTE_ENABLED Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR0_RAW_SENS Value:4.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_MAGE_PNOISE Value:0.000300000014249
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:WP_YAW_BEHAVIOR Value:2.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SYSID_THISMAV Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:AHRS_ORIENTATION Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FS_GCS_ENABLE Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_SONAR_RND Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND2_OFFSET Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:CH12_OPT Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_POS_DELAY Value:220.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_WIND_PSCALE Value:0.5
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_EXTERN2 Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_EXTERN3 Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC11_DZ Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RCMAP_YAW Value:4.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR0_POSITION Value:4.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_SONAR_SCALE Value:12.1211996078
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_DRIFT_SPEED Value:0.0500000007451
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_GYRO_FILTER Value:20.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:WPNAV_RADIUS Value:200.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:ATC_ACCEL_Y_MAX Value:27000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR3_RAW_SENS Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_WIND_SPD Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MIS_RESTART Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC4_TRIM Value:1500.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RATE_PIT_FILT_HZ Value:20.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_MOT3_Z Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_MOT3_Y Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_MOT3_X Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_GPS_GLITCH_Y Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_GPS_GLITCH_X Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_GPS_GLITCH_Z Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC5_MIN Value:1000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_MOTCT Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:CAM_TRIGG_DIST Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:PSC_ACC_XY_FILT Value:2.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_GND_GRADIENT Value:2.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:LGR_SERVO_DEPLOY Value:1750.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:ARMING_CHECK Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC11_FUNCTION Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_PRODUCT_ID Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FENCE_ENABLE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:PHLD_BRAKE_RATE Value:8.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:BATT_CAPACITY Value:3300.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_ANGMAX_TIL Value:4500.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC6_MAX Value:2000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR1_RAW_SENS Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND_GAIN Value:0.800000011921
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:BATT2_VOLT_PIN Value:13.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:GPS_RAW_DATA Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_FLOW_NOISE Value:0.25
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SYSID_MYGCS Value:255.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EPM_RELEASE Value:1100.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_ACCEL_FILTER Value:20.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_MAX_FLOW Value:2.5
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EPM_GRAB Value:1900.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:BATT_AMP_PERVOLT Value:17.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_MAG_GATE Value:3.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC1_DZ Value:30.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_USE2 Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_USE3 Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:LOG_BITMASK Value:176126.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:GPS_MIN_ELEV Value:-100.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:CAM_DURATION Value:10.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND_OFFSET Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:AHRS_GPS_MINSATS Value:6.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:VEL_Z_P Value:5.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC8_REV Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC2_TRIM Value:1500.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC1_TRIM Value:1500.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RELAY_PIN2 Value:-1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:ESC_CALIBRATION Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RCMAP_PITCH Value:2.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_ORIENT3 Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_ORIENT2 Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:ACRO_YAW_P Value:4.5
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR1_RAW_CTRL Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:ACRO_TRAINER Value:2.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR3_RC_CHAN Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC11_MAX Value:1900.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_EAS_GATE Value:10.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC11_TRIM Value:1500.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_MAG_DELAY Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RALLY_LIMIT_KM Value:0.300000011921
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EPM_ENABLE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:WPNAV_LOIT_JERK Value:1000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_MAG_NOISE Value:0.0500000007451
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_GPS_DISABLE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:CH8_OPT Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC1_MIN Value:1000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RSSI_PIN Value:-1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC5_FUNCTION Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_LEARN Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:ACRO_BAL_PITCH Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR2_RC_CHAN Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_FALLBACK Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FS_EKF_THRESH Value:0.800000011921
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR1_EXTRA3 Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR1_EXTRA2 Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR1_EXTRA1 Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR3_EXTRA1 Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR3_EXTRA3 Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR3_EXTRA2 Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_MAG_CAL Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RATE_PIT_P Value:0.15000000596
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MOT_YAW_HEADROOM Value:200.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_ACC2_RND Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RATE_PIT_D Value:0.00400000018999
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:BATT2_AMP_OFFSET Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR0_RC_CHAN Value:4.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RATE_YAW_IMAX Value:1000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RATE_PIT_I Value:0.10000000149
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND2_STOP_PIN Value:-1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC8_TRIM Value:1500.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_ACC2OFFS_Y Value:0.0010000000475
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:ACCEL_Z_IMAX Value:800.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_FLOW_ENABLE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_BARO_DISABLE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_SERVO_RATE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RPM2_TYPE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:BATT2_AMP_PERVOL Value:17.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RPM2_SCALING Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_SONAR_GLITCH Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_MOT2_Z Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_MOT2_X Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_MOT2_Y Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SERIAL1_PROTOCOL Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:ATC_ACCEL_P_MAX Value:110000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_RC_IN_PAN Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:VEL_XY_IMAX Value:1000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FRAME Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_STAB_ROLL Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_VELD_NOISE Value:0.699999988079
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_K_RATE Value:5.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND_SCALING Value:3.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RPM_SCALING Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_ENGINE_MUL Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:AUTOTUNE_AGGR Value:0.10000000149
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:POS_Z_P Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR2_PARAMS Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_POSNE_NOISE Value:0.5
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MAG_ENABLE Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:WPNAV_SPEED_DN Value:150.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_ACCSCAL_Z Value:1.00100004673
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_ACCSCAL_Y Value:1.00100004673
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_USE Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_RC_IN_ROLL Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RATE_PIT_IMAX Value:2000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MOT_THST_MAX Value:0.949999988079
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_GPS_TYPE Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:CAM_SERVO_OFF Value:1100.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SERIAL3_PROTOCOL Value:5.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_OFF_ACC_Z Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_OFF_ACC_Y Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_OFF_ACC_X Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_ACC_RND Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_STAB_PAN Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FS_BATT_ENABLE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_GPS_TYPE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND2_MIN_CM Value:20.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FLOW_FYSCALER Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND2_SCALING Value:3.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC8_MAX Value:2000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_ACC_BIAS_Z Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC7_MAX Value:2000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_BARO_DRIFT Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_LEAD_RLL Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC_FEEL_RP Value:50.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RELAY_DEFAULT Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FS_THR_ENABLE Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC5_TRIM Value:1500.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR2_EXT_STAT Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR2_RAW_SENS Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_ACC_BIAS_X Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_ACC_BIAS_Y Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_ALT_NOISE Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:AHRS_YAW_P Value:0.20000000298
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_RNG_GATE Value:5.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR0_EXT_STAT Value:4.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:GPS_SBAS_MODE Value:2.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_ACC3SCAL_Z Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_ACC3SCAL_Y Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_ACC3SCAL_X Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_TERRAIN Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:PILOT_VELZ_MAX Value:250.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC4_MIN Value:1000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_BARO_DELAY Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC6_MIN Value:1000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MOT_SPIN_ARMED Value:70.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC5_MAX Value:2000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:CH7_OPT Value:7.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_GPS_DRIFTALT Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RATE_RLL_FILT_HZ Value:20.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:ANGLE_MAX Value:4500.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC11_MIN Value:1100.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:GND_ALT_OFFSET Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:GPS_SBP_LOGMASK Value:-256.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC6_FUNCTION Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_GYR3OFFS_Z Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_GYR3OFFS_Y Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_GYR3OFFS_X Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:BATT_VOLT_MULT Value:10.1000003815
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND2_PIN Value:-1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_DEFLT_MODE Value:3.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_VEL_DELAY Value:220.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC4_REV Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:CIRCLE_RADIUS Value:1000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MOT_THR_MIX_MAX Value:0.5
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:GPS_HDOP_GOOD Value:140.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_BARO_GLITCH Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:AHRS_GPS_USE Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:ATC_ACCEL_R_MAX Value:110000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SCHED_DEBUG Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR0_PARAMS Value:10.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:AHRS_WIND_MAX Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_ANGMIN_TIL Value:-4500.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_ANGMAX_ROL Value:4500.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_BARO_RND Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:LGR_SERVO_RTRACT Value:1250.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RPM_TYPE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:WPNAV_ACCEL_Z Value:100.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_ALT_SOURCE Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MOT_THR_MIX_MIN Value:0.10000000149
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:CH10_OPT Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_ACC2OFFS_X Value:0.0010000000475
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_ACC2OFFS_Z Value:0.0010000000475
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:TUNE_LOW Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:BATT_MONITOR Value:4.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_ABIAS_PNOISE Value:4.99999987369e-05
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC7_FUNCTION Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FLOW_FXSCALER Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR2_RAW_CTRL Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:BRD_SERIAL_NUM Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:CAM_SERVO_ON Value:1300.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:WPNAV_LOIT_MINA Value:25.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_FLOAT_EXCEPT Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:AHRS_COMP_BETA Value:0.10000000149
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MOT_CURR_MAX Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND_RMETRIC Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MIS_TOTAL Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_AUTODEC Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_USE Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:ACCEL_Z_FILT_HZ Value:20.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_MAG_OFS_Z Value:-18.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_MAG_OFS_X Value:5.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_MAG_OFS_Y Value:13.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:BATT2_CAPACITY Value:3300.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC10_REV Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RATE_YAW_P Value:0.20000000298
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND_GNDCLEAR Value:10.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RATE_YAW_I Value:0.019999999553
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SERIAL3_BAUD Value:38.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RATE_YAW_D Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_GYR2OFFS_Z Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_GYR2OFFS_X Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_GYR2OFFS_Y Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_MOT_Y Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_MOT_X Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_MOT_Z Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_GYROFFS_Y Value:0.000243681162829
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_GYROFFS_X Value:0.000256891798927
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_GYROFFS_Z Value:0.000204278621823
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC6_TRIM Value:1500.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_EXTERNAL Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_GLITCH_ACCEL Value:100.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EPM_NEUTRAL Value:1500.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:WPNAV_SPEED_UP Value:250.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SYSID_SW_TYPE Value:10.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_ACCEL_FAIL Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC2_MIN Value:1000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_USE2 Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_USE3 Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_EAS_NOISE Value:1.39999997616
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR1_RC_CHAN Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:GPS_TYPE2 Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND_FUNCTION Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:STB_YAW_P Value:4.5
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_GPS2_ENABLE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_POS_GATE Value:10.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_RETRACT_Y Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_RETRACT_X Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_RETRACT_Z Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_GPS_NUMSATS Value:10.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR0_EXTRA1 Value:4.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR0_EXTRA2 Value:4.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR0_EXTRA3 Value:4.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_OFF_JNT_X Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_OFF_JNT_Y Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_OFF_JNT_Z Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SERIAL0_BAUD Value:115.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:AUTOTUNE_AXES Value:7.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR1_POSITION Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_NEUTRAL_Y Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_NEUTRAL_X Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RELAY_PIN3 Value:-1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:PILOT_THR_BHV Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RELAY_PIN4 Value:-1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_MAG_MOT_X Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_MAG_MOT_Y Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_MAG_MOT_Z Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MOT_THST_BAT_MAX Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RTL_ALT_FINAL Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FLOW_ORIENT_YAW Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC6_DZ Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RATE_RLL_P Value:0.15000000596
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RATE_RLL_I Value:0.10000000149
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC11_REV Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:AHRS_RP_P Value:0.20000000298
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_ASPD_RND Value:0.5
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RATE_RLL_D Value:0.00400000018999
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:PHLD_BRAKE_ANGLE Value:3000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:LAND_SPEED Value:50.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:BATT2_VOLT_MULT Value:10.1000003815
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:CAM_TRIGG_TYPE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR3_EXT_STAT Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC3_MAX Value:2000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_PRIMARY Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND2_RMETRIC Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_ANGMAX_PAN Value:4500.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC10_DZ Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FS_THR_VALUE Value:975.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_NEUTRAL_Z Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_DEC Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:CHUTE_ALT_MIN Value:10.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:AUTOTUNE_MIN_D Value:0.00400000018999
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND2_TYPE Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EPM_REGRAB Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:VEL_XY_I Value:0.5
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_OFS_Z Value:-18.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_OFS_Y Value:13.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_OFS_X Value:5.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:POS_XY_P Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC10_TRIM Value:1500.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:EKF_FLOW_GATE Value:3.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:VEL_XY_P Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR1_PARAMS Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_LEAD_PTCH Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:ATC_SLEW_YAW Value:1000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC10_MIN Value:1100.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_ACCOFFS_X Value:0.0010000000475
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_ACCOFFS_Y Value:0.0010000000475
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_ACCOFFS_Z Value:0.0010000000475
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_WIND_DIR Value:180.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND_PIN Value:-1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC1_REV Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:CIRCLE_RATE Value:20.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC_SPEED Value:490.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RATE_YAW_FILT_HZ Value:5.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:COMPASS_ORIENT Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:GPS_AUTO_SWITCH Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR3_PARAMS Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR2_EXTRA2 Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR2_EXTRA3 Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:VEL_XY_FILT_HZ Value:5.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR2_EXTRA1 Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RATE_RLL_IMAX Value:2000.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:MNT_RC_IN_TILT Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC7_DZ Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:PILOT_TKOFF_ALT Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RCMAP_THROTTLE Value:3.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:WPNAV_SPEED Value:500.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:AHRS_GPS_GAIN Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:ATC_RATE_FF_ENAB Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SERIAL4_BAUD Value:38.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:BATT2_MONITOR Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:PILOT_TKOFF_DZ Value:100.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RCMAP_ROLL Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC2_DZ Value:30.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FENCE_TYPE Value:3.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_ACC2SCAL_Z Value:1.00100004673
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_ACC2SCAL_X Value:1.00100004673
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:INS_ACC2SCAL_Y Value:1.00100004673
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:GPS_TYPE Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:THR_DZ Value:100.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RALLY_INCL_HOME Value:1.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:FS_BATT_VOLTAGE Value:10.5
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC3_DZ Value:30.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_GPS_BYTELOSS Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:TELEM_DELAY Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RNGFND2_GNDCLEAR Value:10.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:CLI_ENABLED Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:RC8_DZ Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SR2_POSITION Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:SIM_FLOW_DELAY Value:0.0
+INFO: drone_AUTO.py: print_vehicle_parameters: 127: 			 Key:BATT_CURR_PIN Value:12.0
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 9.999102 9.999088
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 9.999551 9.999088
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 10.000000 9.999088
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 10.000449 9.999088
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 10.000898 9.999088
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 10.000898 9.999544
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 10.000449 9.999544
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 10.000000 9.999544
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 9.999551 9.999544
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 9.999102 9.999544
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 9.999102 10.000000
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 9.999551 10.000000
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 10.000000 10.000000
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 10.000449 10.000000
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 10.000898 10.000000
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 10.000898 10.000456
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 10.000449 10.000456
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 10.000000 10.000456
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 9.999551 10.000456
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 9.999102 10.000456
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 9.999102 10.000912
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 9.999551 10.000912
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 10.000000 10.000912
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 10.000449 10.000912
+DEBUG: drone_AUTO.py: <module>: 213: 			Point: 10.000898 10.000912
+INFO: drone_AUTO.py: <module>: 228: 			Uploading waypoints to vehicle...
+INFO: drone_AUTO.py: <module>: 231: 			Arm and Takeoff
+CRITICAL: __init__.py: statustext_listener: 1065: 			flight plan received
+WARNING: drone_AUTO.py: arm_and_takeoff: 76: 			Waiting for arming...
+WARNING: drone_AUTO.py: arm_and_takeoff: 76: 			Waiting for arming...
+WARNING: drone_AUTO.py: arm_and_takeoff: 76: 			Waiting for arming...
+WARNING: drone_AUTO.py: arm_and_takeoff: 76: 			Waiting for arming...
+ERROR: __init__.py: statustext_listener: 1065: 			ARMING MOTORS
+CRITICAL: __init__.py: statustext_listener: 1065: 			GROUND START
+WARNING: drone_AUTO.py: arm_and_takeoff: 76: 			Waiting for arming...
+CRITICAL: __init__.py: statustext_listener: 1065: 			Initialising APM...
+ERROR: __init__.py: statustext_listener: 1065: 			ARMING MOTORS
+ERROR: __init__.py: statustext_listener: 1065: 			ARMING MOTORS
+WARNING: drone_AUTO.py: arm_and_takeoff: 76: 			Waiting for arming...
+ERROR: __init__.py: statustext_listener: 1065: 			ARMING MOTORS
+INFO: drone_AUTO.py: arm_and_takeoff: 79: 			Taking off!
+INFO: drone_AUTO.py: arm_and_takeoff: 91: 			Altitude: 0.000000 < 28.500000
+INFO: drone_AUTO.py: arm_and_takeoff: 91: 			Altitude: 0.000000 < 28.500000
+INFO: drone_AUTO.py: arm_and_takeoff: 91: 			Altitude: 0.080000 < 28.500000
+INFO: drone_AUTO.py: arm_and_takeoff: 91: 			Altitude: 1.150000 < 28.500000
+INFO: drone_AUTO.py: arm_and_takeoff: 91: 			Altitude: 2.930000 < 28.500000
+INFO: drone_AUTO.py: arm_and_takeoff: 91: 			Altitude: 4.980000 < 28.500000
+INFO: drone_AUTO.py: arm_and_takeoff: 91: 			Altitude: 7.150000 < 28.500000
+INFO: drone_AUTO.py: arm_and_takeoff: 91: 			Altitude: 9.360000 < 28.500000
+INFO: drone_AUTO.py: arm_and_takeoff: 91: 			Altitude: 11.580000 < 28.500000
+INFO: drone_AUTO.py: arm_and_takeoff: 91: 			Altitude: 14.540000 < 28.500000
+INFO: drone_AUTO.py: arm_and_takeoff: 91: 			Altitude: 16.780000 < 28.500000
+INFO: drone_AUTO.py: arm_and_takeoff: 91: 			Altitude: 19.010000 < 28.500000
+INFO: drone_AUTO.py: arm_and_takeoff: 91: 			Altitude: 21.250000 < 28.500000
+INFO: drone_AUTO.py: arm_and_takeoff: 91: 			Altitude: 23.490000 < 28.500000
+INFO: drone_AUTO.py: arm_and_takeoff: 91: 			Altitude: 26.450000 < 28.500000
+INFO: drone_AUTO.py: arm_and_takeoff: 91: 			Altitude: 28.390000 < 28.500000
+INFO: drone_AUTO.py: arm_and_takeoff: 89: 			Reached target altitude of 30.000000
+INFO: drone_AUTO.py: <module>: 235: 			Starting mission
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 142.484415766
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 141.85460084
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 140.524763008
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 137.652196586
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 134.747918828
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 131.442299175
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 127.750801489
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 123.736376646
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 119.462133362
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 114.991038479
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 110.433285817
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 105.788874506
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 101.081648334
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 96.3348353281
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 89.9587828433
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 85.1728495817
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 80.3789676595
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 75.5693448139
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 70.7519356651
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 65.9264070631
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 61.0851366282
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 54.6222661781
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 49.8124805256
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 44.9793305257
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 40.1461900707
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 35.3208408829
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 30.4879285657
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 25.655580375
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 20.8158812001
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 14.3781483035
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 9.76691240616
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 5.71485197803
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 2.49887855707
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 0.343198163665
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 0.642434672402
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 0.998447358187
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 1.09098107343
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (1): 0.880224249585
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #1
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (2): 50.4005822335
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (2): 49.3641139517
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (2): 47.6049343924
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (2): 45.1339387579
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (2): 42.1837860508
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (2): 38.8107222683
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (2): 35.070451307
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (2): 29.6048362535
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (2): 25.263541762
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (2): 20.7998044886
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (2): 16.2247440373
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (2): 11.6385403951
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (2): 7.38646082649
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (2): 3.83580955552
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (2): 1.16453019273
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (2): 0.585334655469
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (2): 1.00875067605
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (2): 1.1534084731
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (2): 1.03139312348
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #2
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (3): 49.1920964546
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (3): 49.1475599265
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (3): 48.5241766151
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (3): 47.3998669058
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (3): 44.9397763889
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (3): 42.257180676
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (3): 39.1295204674
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (3): 35.6232643187
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (3): 31.7718303973
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (3): 27.6533098196
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (3): 21.8314254143
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (3): 17.3116525054
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (3): 12.7696307463
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (3): 8.47204210328
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (3): 4.77574506889
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (3): 1.14836526918
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (3): 0.2738678159
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (3): 0.645671002753
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (3): 0.97879638671
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (3): 0.911097680229
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #3
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (4): 49.2988056521
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (4): 49.3655533493
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (4): 48.8200304346
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (4): 47.2392779604
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (4): 45.3023887907
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (4): 42.6531681591
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (4): 39.5588118177
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (4): 36.0971231798
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (4): 32.2680290535
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (4): 28.17143623
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (4): 23.8522238743
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (4): 17.8852404945
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (4): 13.3429776532
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (4): 9.02348202833
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (4): 5.26069872277
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (4): 2.29008003891
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (4): 0.342932242362
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (4): 0.535127475729
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (4): 0.865124157337
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (4): 0.897571436451
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #4
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (4): 0.719431698439
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (5): 49.4166325057
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (5): 48.9489630233
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (5): 47.9247518191
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (5): 46.3217842523
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (5): 43.9730845766
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (5): 41.056734155
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (5): 36.5597231564
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (5): 32.7748658104
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (5): 28.7116456935
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (5): 24.4369244651
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (5): 19.9950120693
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (5): 15.4864028024
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (5): 11.0112107785
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (5): 6.92584288615
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (5): 2.64176447169
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (5): 0.508565540907
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (5): 0.486924264479
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (5): 0.862297184323
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (5): 0.984556503466
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (5): 0.860105343418
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #5
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (6): 50.6338332894
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (6): 50.2864128174
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (6): 48.7374563961
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (6): 46.8116078091
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (6): 44.1621851808
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (6): 41.0563129114
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (6): 37.5608854129
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (6): 33.7092371566
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (6): 29.5681381481
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (6): 25.1821370311
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (6): 19.0929719943
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (6): 14.4509355706
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (6): 9.95359316316
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (6): 5.93500746038
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (6): 2.71805214928
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (6): 0.469783384158
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (6): 0.534706209726
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (6): 0.99148258854
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (6): 1.02411745297
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (6): 0.857451355854
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #6
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (7): 49.9025681
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (7): 49.2765323973
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (7): 47.9949678972
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (7): 46.0357622102
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (7): 42.3956006721
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (7): 39.1895813211
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (7): 35.5829267525
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (7): 31.6421538757
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (7): 27.4453496859
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (7): 23.0483005944
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (7): 18.5177056138
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (7): 13.9203928442
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (7): 8.10985311289
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (7): 4.43659223266
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (7): 1.61975408564
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (7): 0.129213319705
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (7): 0.785650193455
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (7): 1.06402378631
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (7): 1.05289264554
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #7
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (7): 0.885887016386
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (8): 49.2143696463
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (8): 48.6800609621
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (8): 47.6336751493
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (8): 46.0418506873
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (8): 43.6708392028
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (8): 40.7432288662
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (8): 37.4259336364
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (8): 33.7303302719
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (8): 28.3090989561
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (8): 23.9677381013
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (8): 19.470482663
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (8): 14.8619534041
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (8): 10.3648331396
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (8): 6.30230819514
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (8): 2.99693101372
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (8): 0.631132110574
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (8): 0.684653752966
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (8): 1.02786419111
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (8): 1.0935956425
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (8): 0.961331318253
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #8
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (9): 49.2319769812
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (9): 49.0649794229
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (9): 48.3525054931
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (9): 47.1613761662
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (9): 44.6010287861
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (9): 41.8403352975
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (9): 38.6454902158
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (9): 35.0944612492
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (9): 31.1984194062
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (9): 27.0352309127
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (9): 22.6605379758
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (9): 18.1190704512
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (9): 12.0079555043
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (9): 7.76670374795
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (9): 4.17185309349
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (9): 1.42358987696
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (9): 0.179995359715
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (9): 0.762895142183
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (9): 1.01821858061
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (9): 0.995672876812
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #9
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (10): 49.2605840337
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (10): 49.2494580066
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (10): 48.681748295
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (10): 47.601963762
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (10): 45.9878325774
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (10): 43.6167924143
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (10): 39.5981990366
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (10): 37.3161929597
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (10): 32.2956382987
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (10): 28.2102755159
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (10): 23.8911174693
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (10): 19.3938082954
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (10): 14.8185843095
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (10): 10.365635179
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (10): 6.33581411228
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (10): 3.07413384788
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (10): 0.202082633693
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (10): 0.599560169749
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (10): 0.93347007576
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (10): 0.989043930709
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (10): 0.833537817286
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #10
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (11): 50.6866851756
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (11): 49.8384471606
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (11): 48.3238387876
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (11): 46.0640721633
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (11): 43.2031316461
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (11): 39.9191852825
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (11): 36.2567623765
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (11): 32.2603924784
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (11): 26.5274385264
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (11): 22.0189991198
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (11): 17.4326625128
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (11): 12.8129880677
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (11): 8.48279563297
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (11): 4.77640542182
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (11): 1.90610949752
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (11): 0.109963466475
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (11): 0.739883576483
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (11): 0.940255987012
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (11): 0.884921616699
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #11
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (11): 0.697172347888
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (12): 49.9004113061
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (12): 48.9190104312
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (12): 47.2821543197
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (12): 44.9333539459
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (12): 40.992579578
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (12): 37.541665748
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (12): 33.7568044133
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (12): 29.6825275929
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (12): 25.3744393114
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (12): 20.9439252774
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (12): 16.4466659215
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (12): 11.9496296957
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (12): 6.54102702591
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (12): 3.30399483985
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (12): 0.949245615148
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (12): 0.30896025566
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (12): 0.74321228773
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (12): 0.897593933633
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (12): 0.763470216332
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #12
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (13): 49.4258592536
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (13): 49.2366198836
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (13): 48.3349474104
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (13): 46.8321983236
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (13): 44.6059236746
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (13): 41.7897687918
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (13): 38.5729842116
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (13): 33.6978542196
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (13): 29.7019201185
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (13): 25.4942095162
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (13): 21.1975245481
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (13): 16.7781568751
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (13): 10.8893233345
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (13): 6.91445551793
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (13): 3.64057315841
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (13): 1.20230213571
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (13): 0.159385268101
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (13): 0.631388659867
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (13): 0.821806360339
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (13): 0.757708915062
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #13
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (13): 0.576501754957
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (14): 49.4879610538
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (14): 48.5083181532
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (14): 47.0277898837
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (14): 44.823780934
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (14): 42.052212971
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (14): 38.857835966
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (14): 35.2851419746
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (14): 30.0313939233
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (14): 25.8459718467
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (14): 21.5378588341
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (14): 17.1405653193
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (14): 12.6982452359
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (14): 8.51194975404
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (14): 4.92684708882
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (14): 2.13287591976
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (14): 0.128246526594
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (14): 0.578297225021
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (14): 0.774050501789
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (14): 0.714681227359
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #14
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (15): 49.4834012469
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (15): 49.5834534744
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (15): 48.9822844534
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (15): 47.7243780315
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (15): 44.9414528941
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (15): 42.1474775805
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (15): 38.9528559375
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (15): 35.35734417
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (15): 31.4501731545
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (15): 27.2758893472
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (15): 22.979021402
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (15): 18.6150725147
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (15): 12.6925216064
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (15): 8.5065785428
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (15): 4.92213838226
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (15): 2.11782718357
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (15): 0.293823051169
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (15): 0.470906144126
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (15): 0.756032463849
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (15): 0.776122029491
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #15
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (15): 0.618719489948
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (16): 50.8287031814
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (16): 49.8030398667
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (16): 48.2002189235
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (16): 45.8514653671
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (16): 42.924098124
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (16): 39.562594195
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (16): 34.531284885
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (16): 30.4236653932
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (16): 26.0933291112
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (16): 21.6514580792
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (16): 17.1425800405
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (16): 12.6116588354
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (16): 8.38113889178
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (16): 4.79662818632
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (16): 2.01542988032
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (16): 0.141451148484
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (16): 0.60141425419
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (16): 0.797817315804
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (16): 0.717849736237
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #16
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (17): 50.0344529401
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (17): 49.8546460065
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (17): 48.9408053478
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (17): 47.3936479458
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (17): 44.1765677174
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (17): 41.1601339748
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (17): 37.7428897697
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (17): 34.0027342995
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (17): 29.9843403632
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (17): 25.7319168453
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (17): 19.8987451185
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (17): 15.4572952994
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (17): 11.0494069955
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (17): 7.05318936262
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (17): 3.75851406545
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (17): 1.28788427324
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (17): 0.134698626878
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (17): 0.633192363273
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (17): 0.831298549827
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (17): 0.71957086824
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #17
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (18): 49.4704156145
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (18): 49.3591096863
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (18): 48.5019503031
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (18): 47.0325705318
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (18): 44.817394323
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (18): 42.0455830971
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (18): 37.6930146597
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (18): 33.997232476
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (18): 29.9897178231
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (18): 25.7484851507
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (18): 21.3849565384
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (18): 16.9435323237
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (18): 12.4463458515
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (18): 8.23889050106
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (18): 3.64391396269
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (18): 1.18737318757
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (18): 0.203698455078
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (18): 0.664180745674
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (18): 0.850562472527
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (18): 0.784157080835
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #18
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (19): 49.4100884026
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (19): 49.4657925519
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (19): 48.4972913779
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (19): 47.0613249274
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (19): 44.8684040096
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (19): 42.0743391757
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (19): 38.8461431193
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (19): 35.2393768962
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (19): 31.3320517683
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (19): 27.1797762091
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (19): 21.3689114881
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (19): 16.9160218333
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (19): 12.4522454521
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (19): 8.25592387975
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (19): 4.6945297284
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (19): 1.92365283358
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (19): 0.16942494307
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (19): 0.520912612663
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (19): 0.851838844697
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (19): 0.807371446108
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #19
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (20): 49.3719290861
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (20): 49.4387502176
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (20): 48.8598895202
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (20): 47.6910771865
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (20): 45.8766574939
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (20): 42.3925350906
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (20): 39.2757248488
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (20): 35.7582797323
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (20): 31.9402809531
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (20): 27.8217139158
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (20): 23.5140104098
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (20): 19.1171072891
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (20): 14.6088497621
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (20): 8.84352405324
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (20): 5.13738664645
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (20): 2.23201160605
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (20): 0.293415478787
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (20): 0.525591077443
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (20): 0.844935273043
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (20): 0.88910111728
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #20
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (20): 0.6892254755
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (21): 50.7053982609
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (21): 49.8797739025
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (21): 48.3876136677
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (21): 46.1501128818
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (21): 43.3114676991
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (21): 40.0609275791
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (21): 35.1406654537
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (21): 31.0886464284
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (21): 26.7918013063
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (21): 22.3836365043
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (21): 17.8751996542
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (21): 13.2890170562
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (21): 8.94824736626
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (21): 5.18679638001
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (21): 1.47339129256
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (21): 0.127458042807
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (21): 0.628692403324
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (21): 0.850091037223
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (21): 0.816231313199
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #21
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (21): 0.627834950648
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (22): 49.9554978409
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (22): 49.1079690562
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (22): 46.9370462527
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (22): 44.5102523399
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (22): 41.5936851627
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (22): 38.2540965618
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (22): 34.5582884228
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (22): 30.5507967263
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (22): 26.3541335123
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (22): 22.0573004714
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (22): 16.1908324
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (22): 11.7493757231
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (22): 7.664523573
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (22): 4.25896794328
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (22): 1.64310529599
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (22): 0.0452916638837
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (22): 0.585334577956
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (22): 0.842337823869
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (22): 0.789218989771
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #22
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (23): 49.4036353065
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (23): 49.4035978622
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (23): 48.6911558455
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (23): 47.3553844151
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (23): 45.3185761327
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (23): 42.6474280615
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (23): 39.5423179614
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (23): 34.7789590023
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (23): 30.8392630656
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (23): 26.6765008323
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (23): 22.4128785307
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (23): 18.0375611902
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (23): 13.5950211366
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (23): 9.33033171869
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (23): 5.62206775326
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (23): 1.88279155607
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (23): 0.25041489751
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (23): 0.496508908654
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (23): 0.745570096612
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (23): 0.756050691647
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #23
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (23): 0.612845526014
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (24): 49.5773352392
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (24): 48.8312414514
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (24): 47.4953114022
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (24): 45.4582570285
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (24): 42.7869791182
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (24): 39.6817592145
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (24): 36.1645552657
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (24): 32.3024514785
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (24): 28.1726797045
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (24): 22.4840212186
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (24): 18.1083683359
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (24): 13.6658903282
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (24): 9.39071631923
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (24): 5.65096619245
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (24): 2.68534467101
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (24): 0.660313982345
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (24): 0.516268541981
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (24): 0.764276234501
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (24): 0.760500052162
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #24
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (24): 0.613145097692
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (25): 49.583758329
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (25): 49.1494359541
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (25): 48.036125895
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (25): 46.2883952681
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (25): 42.870846974
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (25): 39.7538967503
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (25): 36.2362092338
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (25): 32.3734486521
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (25): 28.2434716229
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (25): 23.9020040063
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (25): 19.449229395
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (25): 14.8965009538
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (25): 9.06405141725
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (25): 5.31384252103
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (25): 2.36661861978
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (25): 0.368830791069
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (25): 0.529680972277
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (25): 0.858051343694
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (25): 0.92042926492
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (25): 0.777449301751
+CRITICAL: drone_AUTO.py: <module>: 253: 			Dropping Seed
+CRITICAL: __init__.py: statustext_listener: 1065: 			Reached Command #25
+INFO: drone_AUTO.py: <module>: 250: 			Distance to waypoint (26): 142.679858125
+INFO: drone_AUTO.py: <module>: 256: 			Exit 'standard' mission when start heading to final waypoint or start location
+CRITICAL: drone_AUTO.py: <module>: 261: 			Return to launch
+INFO: drone_AUTO.py: <module>: 268: 			Close vehicle object
+INFO: drone_AUTO.py: <module>: 275: 			Completed...
