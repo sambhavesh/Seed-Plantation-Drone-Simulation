@@ -133,11 +133,42 @@ def goto(targetLocation):
 	targetDistance = get_distance_metres(vehicle_initialLocation, targetLocation)
 	msg = vehicle.message_factory.set_position_target_global_int_encode( 0, 0, 0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT_INT, 0b0000111111111000, targetLocation.lat*1e7, targetLocation.lon*1e7, targetLocation.alt, 0, 0, 0, 0, 0, 0, 0, 0)
 	vehicle.send_mavlink(msg)
+	logger.debug("Send Command Message to drone")
 	# target = LocationGlobal(targetLocation.lat,targetLocation.lon,targetLocation.alt)
 	# vehicle.airspeed=15
 	# vehicle.simple_goto(target)
-	while True: #Stop action if we are no longer in guided mode.
-		logger.debug("mode: %s" % vehicle.mode.name)
+
+	fiveSecondCheck = targetDistance
+	fiveCounter = 1
+	logger.debug("fiveSecondCheck distance: %f " % (fiveSecondCheck))
+	logger.debug("fiveCounter value: %d " % (fiveCounter))
+	while True:
+		logger.debug("mode: %s" % vehicle.mode.name) #Stop action if we are no longer in guided mode.
+		while (vehicle.mode.name != "GUIDED"):
+			vehicle.mode = VehicleMode("GUIDED")
+			time.sleep(0.1)
+
+		if fiveCounter == 1:
+			vc_loc = vehicle.location.global_relative_frame
+			vehicle_currentLocation = LAT_LON_ALT(vc_loc.lon,vc_loc.lat,vc_loc.alt)
+			fiveSecondCheck = get_distance_metres(vehicle_currentLocation, targetLocation)
+			logger.debug("fiveSecondCheck distance: %f " % (fiveSecondCheck))
+			logger.debug("fiveCounter value: %d " % (fiveCounter))
+
+		if fiveCounter >=5:
+			logger.debug("fiveSecondCheck distance: %f " % (fiveSecondCheck))
+			logger.debug("fiveCounter value: %d " % (fiveCounter))
+			fiveCounter = 1
+			vc_loc = vehicle.location.global_relative_frame
+			vehicle_currentLocation = LAT_LON_ALT(vc_loc.lon,vc_loc.lat,vc_loc.alt)
+			currentDistanceToTarget = get_distance_metres(vehicle_currentLocation, targetLocation)
+			logger.debug("fiveSecondCheck currentDistanceToTarget distance: %f " % (currentDistanceToTarget))
+			if currentDistanceToTarget >= 0.9* fiveSecondCheck:
+				#resend the msg command to drone
+				vehicle.send_mavlink(msg)
+				logger.critical("Last command message dropped. Resending the command message to drone")
+				logger.debug("Resend the command message to drone.")
+
 		vc_loc = vehicle.location.global_relative_frame
 		vehicle_currentLocation = LAT_LON_ALT(vc_loc.lon,vc_loc.lat,vc_loc.alt)
 		remainingDistance=get_distance_metres(vehicle_currentLocation, targetLocation)
@@ -145,17 +176,15 @@ def goto(targetLocation):
 		print("Distance to target: %f" % (remainingDistance))
 		if remainingDistance <= 1: #Just below target, in case of undershoot.
 			logger.info("Reached target")
-			while (vehicle.mode.name != "GUIDED"):
-				vehicle.mode = VehicleMode("GUIDED")
-				time.sleep(0.1)
 			break
-		time.sleep(2)
+		fiveCounter += 1
+		time.sleep(1)
 
 
 
-def print_vechicle_attributes():
+def print_vehicle_attributes():
 	"""
-	This function list all the attributes of the vechicle and stores it in log file
+	This function list all the attributes of the vehicle and stores it in log file
 	"""
 	logger.info("Autopilot Firmware version: %s" % vehicle.version)
 	logger.info("Autopilot capabilities (supports ftp): %s" % vehicle.capabilities.ftp)
@@ -180,9 +209,9 @@ def print_vechicle_attributes():
 	logger.info("Mode: %s" % vehicle.mode.name)
 	logger.info("Armed: %s" % vehicle.armed)
 
-def print_vechicle_parameters():
+def print_vehicle_parameters():
 	"""
-	This function list all the parameters of the vechicle and stores it in log file
+	This function list all the parameters of the vehicle and stores it in log file
 	"""
 	logger.info ("Print all parameters (`vehicle.parameters`):")
 	for key, value in vehicle.parameters.iteritems():
@@ -262,10 +291,10 @@ print('Connecting to vehicle on: %s' % connection_string)
 logger.info('Connecting to vehicle on: %s' % connection_string)
 vehicle = connect(connection_string, wait_ready=True)
 
-#log vechicle attributes:
-print_vechicle_attributes()
-#log vechicle parameters:
-print_vechicle_parameters()
+#log vehicle attributes:
+print_vehicle_attributes()
+#log vehicle parameters:
+print_vehicle_parameters()
 
 print("Arm and Takeoff")
 logger.info("Arm and Takeoff")
