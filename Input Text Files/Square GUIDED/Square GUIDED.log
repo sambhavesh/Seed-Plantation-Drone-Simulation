@@ -1,0 +1,1164 @@
+DEBUG: drone_GUIDED.py: drone_GUIDED: <module>: 216: 			USER entered latitute value: 10.0
+DEBUG: drone_GUIDED.py: drone_GUIDED: <module>: 221: 			USER entered longitude value: 10.0
+DEBUG: drone_GUIDED.py: drone_GUIDED: <module>: 226: 			USER entered altitude value: 30.0
+INFO: drone_GUIDED.py: drone_GUIDED: <module>: 262: 			Connecting to vehicle on: udp:127.0.0.1:14551
+CRITICAL: __init__.py: __init__: statustext_listener: 1065: 			APM:Copter V3.3 (d6053245)
+CRITICAL: __init__.py: __init__: statustext_listener: 1065: 			Frame: QUAD
+DEBUG: __init__.py: __init__: default_still_waiting_callback: 3082: 			Still waiting for data from vehicle: parameters
+DEBUG: __init__.py: __init__: default_still_waiting_callback: 3082: 			Still waiting for data from vehicle: parameters
+DEBUG: __init__.py: __init__: default_still_waiting_callback: 3082: 			Still waiting for data from vehicle: parameters
+DEBUG: __init__.py: __init__: default_still_waiting_callback: 3082: 			Still waiting for data from vehicle: parameters
+DEBUG: __init__.py: __init__: default_still_waiting_callback: 3082: 			Still waiting for data from vehicle: parameters
+DEBUG: __init__.py: __init__: default_still_waiting_callback: 3082: 			Still waiting for data from vehicle: parameters
+DEBUG: __init__.py: __init__: default_still_waiting_callback: 3082: 			Still waiting for data from vehicle: parameters
+DEBUG: __init__.py: __init__: default_still_waiting_callback: 3082: 			Still waiting for data from vehicle: parameters
+DEBUG: __init__.py: __init__: default_still_waiting_callback: 3082: 			Still waiting for data from vehicle: parameters
+DEBUG: __init__.py: __init__: default_still_waiting_callback: 3082: 			Still waiting for data from vehicle: parameters
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_attributes: 160: 			Autopilot Firmware version: APM:Copter-3.3.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_attributes: 161: 			Autopilot capabilities (supports ftp): False
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_attributes: 162: 			Global Location:LocationGlobal:lat=10.0,lon=10.0,alt=None
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_attributes: 163: 			Global Location (relative altitude): LocationGlobalRelative:lat=10.0,lon=10.0,alt=0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_attributes: 164: 			Local Location: LocationLocal:north=None,east=None,down=None
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_attributes: 165: 			Attitude: Attitude:pitch=0.000782963936217,yaw=-3.14029932022,roll=0.00068180024391
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_attributes: 166: 			Velocity: [0.01, -0.01, 0.0]
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_attributes: 167: 			GPS: GPSInfo:fix=3,num_sat=10
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_attributes: 168: 			Groundspeed: 0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_attributes: 169: 			Airspeed: 0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_attributes: 170: 			Gimbal status: Gimbal: pitch=None, roll=None, yaw=None
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_attributes: 171: 			Battery: Battery:voltage=12.587,current=0.0,level=100
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_attributes: 172: 			EKF OK?: True
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_attributes: 173: 			Last Heartbeat: 0.657818574
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_attributes: 174: 			Rangefinder: Rangefinder: distance=None, voltage=None
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_attributes: 175: 			Rangefinder distance: None
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_attributes: 176: 			Rangefinder voltage: None
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_attributes: 177: 			Heading: 180
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_attributes: 178: 			Is Armable?: True
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_attributes: 179: 			System status: STANDBY
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_attributes: 180: 			Mode: STABILIZE
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_attributes: 181: 			Armed: False
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 187: 			Print all parameters (`vehicle.parameters`):
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC7_REV Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:GPS_INJECT_TO Value:127.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FLTMODE1 Value:7.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FLTMODE3 Value:6.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FLTMODE2 Value:9.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FLTMODE5 Value:5.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FLTMODE4 Value:3.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FLTMODE6 Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC5_REV Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_GLITCH_RAD Value:25.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_VEL_GATE Value:5.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:CH9_OPT Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_WIND_TURB Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_ARSP_FAIL Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIMPLE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC2_MAX Value:2000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_JSTICK_SPD Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:ACRO_EXPO Value:0.300000011921
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_ANGMIN_ROL Value:-4500.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_BATT_VOLTAGE Value:12.6000003815
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_TYPE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_HGT_GATE Value:10.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_DEV_ID3 Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_DEV_ID2 Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND2_SETTLE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND_PWRRNG Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC2_REV Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:THR_MIN Value:130.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:BATT_AMP_OFFSET Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_DRIFT_TIME Value:5.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND2_FUNCTION Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND_MIN_CM Value:20.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:THR_MID Value:500.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_WIND_PNOISE Value:0.10000000149
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND_SETTLE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:ACRO_RP_P Value:4.5
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_GPS_HZ Value:5.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR3_POSITION Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:WPNAV_LOIT_SPEED Value:500.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC3_MIN Value:1000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RALLY_TOTAL Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_GPS_DELAY Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:STB_PIT_P Value:4.5
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MOT_THST_BAT_MIN Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC3_REV Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FENCE_ACTION Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_GYRO_PNOISE Value:0.0149999996647
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC4_DZ Value:40.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_MAG_ERROR Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:LAND_REPOSITION Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:CH11_OPT Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:GPS_MIN_DGPS Value:100.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:WPNAV_LOIT_MAXA Value:250.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND_STOP_PIN Value:-1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:CHUTE_SERVO_ON Value:1300.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND_TYPE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:GCS_PID_MASK Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC6_REV Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RTL_ALT Value:1500.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SERIAL4_PROTOCOL Value:5.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RTL_LOIT_TIME Value:5000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC4_MAX Value:2000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SERIAL2_BAUD Value:57.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_GBIAS_PNOISE Value:9.99999997475e-07
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FS_BATT_MAH Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:GPS_GNSS_MODE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RSSI_RANGE Value:5.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SERIAL1_BAUD Value:57.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RTL_CLIMB_MIN Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC3_TRIM Value:1500.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND_MAX_CM Value:700.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_FLOW_RATE Value:10.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FS_EKF_ACTION Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MOT_THST_EXPO Value:0.649999976158
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FLOW_ENABLE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RELAY_PIN Value:13.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:TERRAIN_ENABLE Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_MAGB_PNOISE Value:0.000300000014249
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:BATT_VOLT_PIN Value:13.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_ANGMIN_PAN Value:-4500.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR0_RAW_CTRL Value:4.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC5_DZ Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_ACC_PNOISE Value:0.25
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FENCE_RADIUS Value:150.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_OFS3_Y Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_OFS3_X Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SUPER_SIMPLE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_OFS3_Z Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR3_RAW_CTRL Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_GYR_RND Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SYSID_SW_MREV Value:120.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_OFS2_X Value:5.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_OFS2_Y Value:13.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_OFS2_Z Value:-18.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_RC_FAIL Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:GND_ABS_PRESS Value:101325.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC1_MAX Value:2000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:WPNAV_ACCEL Value:100.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC7_MIN Value:1000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:GPS_NAVFILTER Value:8.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FENCE_MARGIN Value:2.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:ACRO_BAL_ROLL Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:AHRS_TRIM_Z Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:AHRS_TRIM_Y Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:AHRS_TRIM_X Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:CHUTE_TYPE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC10_MAX Value:1900.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_DEV_ID Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND2_MAX_CM Value:700.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:GND_TEMP Value:30.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC7_TRIM Value:1500.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC8_MIN Value:1000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_STAB_TILT Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:BATT2_CURR_PIN Value:12.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:TUNE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FENCE_ALT_MAX Value:100.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC10_FUNCTION Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:ACCEL_Z_P Value:0.5
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:ACCEL_Z_I Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_ACC3OFFS_X Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_ACC3OFFS_Y Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_ACC3OFFS_Z Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:ACCEL_Z_D Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:TERRAIN_SPACING Value:100.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_FLOW_DELAY Value:10.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SERIAL2_PROTOCOL Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:TUNE_HIGH Value:1000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_MAG_RND Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_WIND_DELAY Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_VELNE_NOISE Value:0.5
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_OFF_GYRO_Z Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_OFF_GYRO_X Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_OFF_GYRO_Y Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:PILOT_ACCEL_Z Value:250.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR1_EXT_STAT Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC8_FUNCTION Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_ACCSCAL_X Value:1.00100004673
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:CHUTE_SERVO_OFF Value:1100.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:PILOT_THR_FILT Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:STB_RLL_P Value:4.5
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:CHUTE_ENABLED Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR0_RAW_SENS Value:4.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_MAGE_PNOISE Value:0.000300000014249
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:WP_YAW_BEHAVIOR Value:2.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SYSID_THISMAV Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:AHRS_ORIENTATION Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FS_GCS_ENABLE Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_SONAR_RND Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND2_OFFSET Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:CH12_OPT Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_POS_DELAY Value:220.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_WIND_PSCALE Value:0.5
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_EXTERN2 Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_EXTERN3 Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC11_DZ Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RCMAP_YAW Value:4.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR0_POSITION Value:4.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_SONAR_SCALE Value:12.1211996078
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_DRIFT_SPEED Value:0.0500000007451
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_GYRO_FILTER Value:20.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:WPNAV_RADIUS Value:200.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:ATC_ACCEL_Y_MAX Value:27000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR3_RAW_SENS Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_WIND_SPD Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MIS_RESTART Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC4_TRIM Value:1500.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RATE_PIT_FILT_HZ Value:20.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_MOT3_Z Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_MOT3_Y Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_MOT3_X Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_GPS_GLITCH_Y Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_GPS_GLITCH_X Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_GPS_GLITCH_Z Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC5_MIN Value:1000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_MOTCT Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:CAM_TRIGG_DIST Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:PSC_ACC_XY_FILT Value:2.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_GND_GRADIENT Value:2.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:LGR_SERVO_DEPLOY Value:1750.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:ARMING_CHECK Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC11_FUNCTION Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_PRODUCT_ID Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FENCE_ENABLE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:PHLD_BRAKE_RATE Value:8.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:BATT_CAPACITY Value:3300.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_ANGMAX_TIL Value:4500.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC6_MAX Value:2000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR1_RAW_SENS Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND_GAIN Value:0.800000011921
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:BATT2_VOLT_PIN Value:13.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:GPS_RAW_DATA Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_FLOW_NOISE Value:0.25
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SYSID_MYGCS Value:255.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EPM_RELEASE Value:1100.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_ACCEL_FILTER Value:20.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_MAX_FLOW Value:2.5
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EPM_GRAB Value:1900.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:BATT_AMP_PERVOLT Value:17.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_MAG_GATE Value:3.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC1_DZ Value:30.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_USE2 Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_USE3 Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:LOG_BITMASK Value:176126.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:GPS_MIN_ELEV Value:-100.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:CAM_DURATION Value:10.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND_OFFSET Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:AHRS_GPS_MINSATS Value:6.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:VEL_Z_P Value:5.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC8_REV Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC2_TRIM Value:1500.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC1_TRIM Value:1500.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RELAY_PIN2 Value:-1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:ESC_CALIBRATION Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RCMAP_PITCH Value:2.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_ORIENT3 Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_ORIENT2 Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:ACRO_YAW_P Value:4.5
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR1_RAW_CTRL Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:ACRO_TRAINER Value:2.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR3_RC_CHAN Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC11_MAX Value:1900.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_EAS_GATE Value:10.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC11_TRIM Value:1500.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_MAG_DELAY Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RALLY_LIMIT_KM Value:0.300000011921
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EPM_ENABLE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:WPNAV_LOIT_JERK Value:1000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_MAG_NOISE Value:0.0500000007451
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_GPS_DISABLE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:CH8_OPT Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC1_MIN Value:1000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RSSI_PIN Value:-1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC5_FUNCTION Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_LEARN Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:ACRO_BAL_PITCH Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR2_RC_CHAN Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_FALLBACK Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FS_EKF_THRESH Value:0.800000011921
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR1_EXTRA3 Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR1_EXTRA2 Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR1_EXTRA1 Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR3_EXTRA1 Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR3_EXTRA3 Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR3_EXTRA2 Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_MAG_CAL Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RATE_PIT_P Value:0.15000000596
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MOT_YAW_HEADROOM Value:200.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_ACC2_RND Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RATE_PIT_D Value:0.00400000018999
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:BATT2_AMP_OFFSET Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR0_RC_CHAN Value:4.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RATE_YAW_IMAX Value:1000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RATE_PIT_I Value:0.10000000149
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND2_STOP_PIN Value:-1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC8_TRIM Value:1500.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_ACC2OFFS_Y Value:0.0010000000475
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:ACCEL_Z_IMAX Value:800.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_FLOW_ENABLE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_BARO_DISABLE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_SERVO_RATE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RPM2_TYPE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:BATT2_AMP_PERVOL Value:17.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RPM2_SCALING Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_SONAR_GLITCH Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_MOT2_Z Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_MOT2_X Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_MOT2_Y Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SERIAL1_PROTOCOL Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:ATC_ACCEL_P_MAX Value:110000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_RC_IN_PAN Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:VEL_XY_IMAX Value:1000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FRAME Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_STAB_ROLL Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_VELD_NOISE Value:0.699999988079
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_K_RATE Value:5.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND_SCALING Value:3.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RPM_SCALING Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_ENGINE_MUL Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:AUTOTUNE_AGGR Value:0.10000000149
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:POS_Z_P Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR2_PARAMS Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_POSNE_NOISE Value:0.5
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MAG_ENABLE Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:WPNAV_SPEED_DN Value:150.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_ACCSCAL_Z Value:1.00100004673
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_ACCSCAL_Y Value:1.00100004673
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_USE Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_RC_IN_ROLL Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RATE_PIT_IMAX Value:2000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MOT_THST_MAX Value:0.949999988079
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_GPS_TYPE Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:CAM_SERVO_OFF Value:1100.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SERIAL3_PROTOCOL Value:5.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_OFF_ACC_Z Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_OFF_ACC_Y Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_OFF_ACC_X Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_ACC_RND Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_STAB_PAN Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FS_BATT_ENABLE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_GPS_TYPE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND2_MIN_CM Value:20.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FLOW_FYSCALER Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND2_SCALING Value:3.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC8_MAX Value:2000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_ACC_BIAS_Z Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC7_MAX Value:2000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_BARO_DRIFT Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_LEAD_RLL Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC_FEEL_RP Value:50.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RELAY_DEFAULT Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FS_THR_ENABLE Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC5_TRIM Value:1500.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR2_EXT_STAT Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR2_RAW_SENS Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_ACC_BIAS_X Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_ACC_BIAS_Y Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_ALT_NOISE Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:AHRS_YAW_P Value:0.20000000298
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_RNG_GATE Value:5.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR0_EXT_STAT Value:4.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:GPS_SBAS_MODE Value:2.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_ACC3SCAL_Z Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_ACC3SCAL_Y Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_ACC3SCAL_X Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_TERRAIN Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:PILOT_VELZ_MAX Value:250.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC4_MIN Value:1000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_BARO_DELAY Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC6_MIN Value:1000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MOT_SPIN_ARMED Value:70.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC5_MAX Value:2000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:CH7_OPT Value:7.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_GPS_DRIFTALT Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RATE_RLL_FILT_HZ Value:20.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:ANGLE_MAX Value:4500.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC11_MIN Value:1100.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:GND_ALT_OFFSET Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:GPS_SBP_LOGMASK Value:-256.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC6_FUNCTION Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_GYR3OFFS_Z Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_GYR3OFFS_Y Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_GYR3OFFS_X Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:BATT_VOLT_MULT Value:10.1000003815
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND2_PIN Value:-1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_DEFLT_MODE Value:3.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_VEL_DELAY Value:220.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC4_REV Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:CIRCLE_RADIUS Value:1000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MOT_THR_MIX_MAX Value:0.5
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:GPS_HDOP_GOOD Value:140.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_BARO_GLITCH Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:AHRS_GPS_USE Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:ATC_ACCEL_R_MAX Value:110000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SCHED_DEBUG Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR0_PARAMS Value:10.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:AHRS_WIND_MAX Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_ANGMIN_TIL Value:-4500.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_ANGMAX_ROL Value:4500.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_BARO_RND Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:LGR_SERVO_RTRACT Value:1250.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RPM_TYPE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:WPNAV_ACCEL_Z Value:100.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_ALT_SOURCE Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MOT_THR_MIX_MIN Value:0.10000000149
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:CH10_OPT Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_ACC2OFFS_X Value:0.0010000000475
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_ACC2OFFS_Z Value:0.0010000000475
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:TUNE_LOW Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:BATT_MONITOR Value:4.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_ABIAS_PNOISE Value:4.99999987369e-05
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC7_FUNCTION Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FLOW_FXSCALER Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR2_RAW_CTRL Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:BRD_SERIAL_NUM Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:CAM_SERVO_ON Value:1300.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:WPNAV_LOIT_MINA Value:25.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_FLOAT_EXCEPT Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:AHRS_COMP_BETA Value:0.10000000149
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MOT_CURR_MAX Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND_RMETRIC Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MIS_TOTAL Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_AUTODEC Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_USE Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:ACCEL_Z_FILT_HZ Value:20.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_MAG_OFS_Z Value:-18.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_MAG_OFS_X Value:5.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_MAG_OFS_Y Value:13.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:BATT2_CAPACITY Value:3300.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC10_REV Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RATE_YAW_P Value:0.20000000298
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND_GNDCLEAR Value:10.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RATE_YAW_I Value:0.019999999553
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SERIAL3_BAUD Value:38.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RATE_YAW_D Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_GYR2OFFS_Z Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_GYR2OFFS_X Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_GYR2OFFS_Y Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_MOT_Y Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_MOT_X Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_MOT_Z Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_GYROFFS_Y Value:0.000214924890315
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_GYROFFS_X Value:0.000228135540965
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_GYROFFS_Z Value:0.000175522349309
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC6_TRIM Value:1500.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_EXTERNAL Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_GLITCH_ACCEL Value:100.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EPM_NEUTRAL Value:1500.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:WPNAV_SPEED_UP Value:250.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SYSID_SW_TYPE Value:10.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_ACCEL_FAIL Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC2_MIN Value:1000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_USE2 Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_USE3 Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_EAS_NOISE Value:1.39999997616
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR1_RC_CHAN Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:GPS_TYPE2 Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND_FUNCTION Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:STB_YAW_P Value:4.5
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_GPS2_ENABLE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_POS_GATE Value:10.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_RETRACT_Y Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_RETRACT_X Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_RETRACT_Z Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_GPS_NUMSATS Value:10.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR0_EXTRA1 Value:4.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR0_EXTRA2 Value:4.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR0_EXTRA3 Value:4.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_OFF_JNT_X Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_OFF_JNT_Y Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_OFF_JNT_Z Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SERIAL0_BAUD Value:115.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:AUTOTUNE_AXES Value:7.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR1_POSITION Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_NEUTRAL_Y Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_NEUTRAL_X Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RELAY_PIN3 Value:-1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:PILOT_THR_BHV Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RELAY_PIN4 Value:-1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_MAG_MOT_X Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_MAG_MOT_Y Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_MAG_MOT_Z Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MOT_THST_BAT_MAX Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RTL_ALT_FINAL Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FLOW_ORIENT_YAW Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC6_DZ Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RATE_RLL_P Value:0.15000000596
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RATE_RLL_I Value:0.10000000149
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC11_REV Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:AHRS_RP_P Value:0.20000000298
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_ASPD_RND Value:0.5
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RATE_RLL_D Value:0.00400000018999
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:PHLD_BRAKE_ANGLE Value:3000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:LAND_SPEED Value:50.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:BATT2_VOLT_MULT Value:10.1000003815
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:CAM_TRIGG_TYPE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR3_EXT_STAT Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC3_MAX Value:2000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_PRIMARY Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND2_RMETRIC Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_ANGMAX_PAN Value:4500.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC10_DZ Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FS_THR_VALUE Value:975.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_NEUTRAL_Z Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_DEC Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:CHUTE_ALT_MIN Value:10.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:AUTOTUNE_MIN_D Value:0.00400000018999
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND2_TYPE Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EPM_REGRAB Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:VEL_XY_I Value:0.5
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_OFS_Z Value:-18.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_OFS_Y Value:13.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_OFS_X Value:5.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:POS_XY_P Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC10_TRIM Value:1500.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:EKF_FLOW_GATE Value:3.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:VEL_XY_P Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR1_PARAMS Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_LEAD_PTCH Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:ATC_SLEW_YAW Value:1000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC10_MIN Value:1100.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_ACCOFFS_X Value:0.0010000000475
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_ACCOFFS_Y Value:0.0010000000475
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_ACCOFFS_Z Value:0.0010000000475
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_WIND_DIR Value:180.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND_PIN Value:-1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC1_REV Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:CIRCLE_RATE Value:20.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC_SPEED Value:490.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RATE_YAW_FILT_HZ Value:5.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:COMPASS_ORIENT Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:GPS_AUTO_SWITCH Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR3_PARAMS Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR2_EXTRA2 Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR2_EXTRA3 Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:VEL_XY_FILT_HZ Value:5.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR2_EXTRA1 Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RATE_RLL_IMAX Value:2000.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:MNT_RC_IN_TILT Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC7_DZ Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:PILOT_TKOFF_ALT Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RCMAP_THROTTLE Value:3.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:WPNAV_SPEED Value:500.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:AHRS_GPS_GAIN Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:ATC_RATE_FF_ENAB Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SERIAL4_BAUD Value:38.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:BATT2_MONITOR Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:PILOT_TKOFF_DZ Value:100.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RCMAP_ROLL Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC2_DZ Value:30.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FENCE_TYPE Value:3.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_ACC2SCAL_Z Value:1.00100004673
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_ACC2SCAL_X Value:1.00100004673
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:INS_ACC2SCAL_Y Value:1.00100004673
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:GPS_TYPE Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:THR_DZ Value:100.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RALLY_INCL_HOME Value:1.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:FS_BATT_VOLTAGE Value:10.5
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC3_DZ Value:30.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_GPS_BYTELOSS Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:TELEM_DELAY Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RNGFND2_GNDCLEAR Value:10.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:CLI_ENABLED Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:RC8_DZ Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SR2_POSITION Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:SIM_FLOW_DELAY Value:0.0
+INFO: drone_GUIDED.py: drone_GUIDED: print_vechicle_parameters: 189: 			 Key:BATT_CURR_PIN Value:12.0
+INFO: drone_GUIDED.py: drone_GUIDED: <module>: 271: 			Arm and Takeoff
+WARNING: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 87: 			 Waiting for arming...
+WARNING: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 87: 			 Waiting for arming...
+WARNING: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 87: 			 Waiting for arming...
+WARNING: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 87: 			 Waiting for arming...
+ERROR: __init__.py: __init__: statustext_listener: 1065: 			ARMING MOTORS
+CRITICAL: __init__.py: __init__: statustext_listener: 1065: 			GROUND START
+WARNING: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 87: 			 Waiting for arming...
+CRITICAL: __init__.py: __init__: statustext_listener: 1065: 			Initialising APM...
+WARNING: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 87: 			 Waiting for arming...
+ERROR: __init__.py: __init__: statustext_listener: 1065: 			ARMING MOTORS
+INFO: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 90: 			Taking off!
+INFO: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 102: 			Altitude: 0.000000 < 28.500000
+INFO: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 102: 			Altitude: 0.000000 < 28.500000
+INFO: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 102: 			Altitude: 0.060000 < 28.500000
+INFO: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 102: 			Altitude: 1.050000 < 28.500000
+INFO: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 102: 			Altitude: 2.800000 < 28.500000
+INFO: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 102: 			Altitude: 4.830000 < 28.500000
+INFO: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 102: 			Altitude: 6.990000 < 28.500000
+INFO: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 102: 			Altitude: 9.940000 < 28.500000
+INFO: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 102: 			Altitude: 12.160000 < 28.500000
+INFO: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 102: 			Altitude: 14.390000 < 28.500000
+INFO: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 102: 			Altitude: 16.630000 < 28.500000
+INFO: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 102: 			Altitude: 18.870000 < 28.500000
+INFO: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 102: 			Altitude: 21.110000 < 28.500000
+INFO: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 102: 			Altitude: 24.090000 < 28.500000
+INFO: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 102: 			Altitude: 26.320000 < 28.500000
+INFO: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 102: 			Altitude: 28.310000 < 28.500000
+INFO: drone_GUIDED.py: drone_GUIDED: arm_and_takeoff: 100: 			Reached target altitude of 30.000000
+INFO: drone_GUIDED.py: drone_GUIDED: <module>: 275: 			Starting mission
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 9.999102 , lon: 9.999088 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 9.999102 , lon: 9.999088 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 142.515788
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 141.673505
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 138.092858
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 132.040368
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 124.476116
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 114.376642
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 105.206413
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 95.799447
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 84.645096
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 74.993903
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 65.279898
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 55.558684
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 45.916598
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 34.683586
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 25.040951
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 15.389972
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 5.338184
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.217261
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 9.999551 , lon: 9.999088 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 9.999551 , lon: 9.999088 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 49.909638
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 50.258104
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 48.021348
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 41.788490
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 34.439688
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 25.988871
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 16.970896
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 6.762293
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.895627
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 10.000000 , lon: 9.999088 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 10.000000 , lon: 9.999088 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 50.895282
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 46.976833
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 40.776334
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 32.460769
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 24.390173
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 15.696319
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 7.226634
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.642853
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 10.000449 , lon: 9.999088 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 10.000449 , lon: 9.999088 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 50.634626
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 46.871924
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 40.793878
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 33.780751
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 24.385482
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 15.602484
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 7.087083
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 1.186956
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.808742
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 10.000898 , lon: 9.999088 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 10.000898 , lon: 9.999088 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 49.193832
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 48.180860
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 44.807821
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 39.119459
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 30.603846
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 22.099366
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 13.060195
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 5.022437
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.186348
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 10.000898 , lon: 9.999544 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 10.000898 , lon: 9.999544 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 50.685668
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 49.836567
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 46.433119
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 40.498287
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 31.677286
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 23.002638
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 13.839272
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 5.511983
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.102530
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 10.000449 , lon: 9.999544 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 10.000449 , lon: 9.999544 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 49.931574
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 49.095229
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 45.750527
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 39.905672
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 31.216448
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 22.662366
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 13.598125
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 5.370715
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.142020
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 10.000000 , lon: 9.999544 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 10.000000 , lon: 9.999544 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 49.860010
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 47.333064
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 42.089904
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 35.555585
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 26.428269
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 17.746315
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 8.930036
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 1.428294
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.724847
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 9.999551 , lon: 9.999544 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 9.999551 , lon: 9.999544 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 49.276446
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 48.085328
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 44.612226
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 37.777485
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 30.308236
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 21.814812
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 12.765010
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 3.737573
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.271683
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 9.999102 , lon: 9.999544 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 9.999102 , lon: 9.999544 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 49.739312
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 47.724415
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 42.915481
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 35.423855
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 27.687574
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 19.094030
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 10.145079
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 2.008450
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.680475
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 9.999102 , lon: 10.000000 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 9.999102 , lon: 10.000000 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 50.710556
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 50.037204
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 46.907328
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 39.957939
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 32.295496
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 23.599940
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 14.293467
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 4.620651
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.097150
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 9.999551 , lon: 10.000000 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 9.999551 , lon: 10.000000 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 49.920410
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 49.273556
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 46.148677
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 39.266071
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 31.713011
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 23.082432
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 13.919764
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 4.424450
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.115530
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 10.000000 , lon: 10.000000 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 10.000000 , lon: 10.000000 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 49.893420
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 47.589091
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 42.512930
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 34.965632
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 27.217893
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 18.602141
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 9.752833
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 1.882123
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.624977
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 10.000449 , lon: 10.000000 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 10.000449 , lon: 10.000000 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 49.376630
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 48.040932
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 44.122399
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 37.098084
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 29.550861
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 21.024385
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 11.996844
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 3.301488
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.347938
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 10.000898 , lon: 10.000000 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 10.000898 , lon: 10.000000 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 49.683807
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 47.825079
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 43.160792
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 35.824528
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 28.154414
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 19.616199
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 9.330443
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 2.589704
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.446530
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 10.000898 , lon: 10.000456 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 10.000898 , lon: 10.000456 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 50.572676
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 49.887512
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 47.002311
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 40.376319
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 33.038752
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 24.622538
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 15.628945
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 5.906326
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.704293
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 10.000449 , lon: 10.000456 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 10.000449 , lon: 10.000456 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 49.746591
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 49.291194
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 46.522772
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 40.064035
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 32.812290
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 24.517317
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 14.087610
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 5.956152
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.744270
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 10.000000 , lon: 10.000456 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 10.000000 , lon: 10.000456 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 50.717555
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 47.578057
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 40.865536
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 33.986426
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 26.083750
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 17.446936
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 7.521925
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 1.569759
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.568633
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 9.999551 , lon: 10.000456 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 9.999551 , lon: 10.000456 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 49.432285
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 48.307949
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 43.643861
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 37.578640
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 30.101199
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 21.645058
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 11.429624
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 3.996310
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.105934
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 9.999102 , lon: 10.000456 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 9.999102 , lon: 10.000456 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 49.961990
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 47.991539
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 42.247594
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 35.803811
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 28.104677
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 19.559656
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 9.438407
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 2.703040
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.395769
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 9.999102 , lon: 10.000912 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 9.999102 , lon: 10.000912 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 50.893687
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 50.030754
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 45.567504
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 39.399601
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 31.806439
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 23.445532
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 13.105742
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 5.186279
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.415015
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 9.999551 , lon: 10.000912 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 9.999551 , lon: 10.000912 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 50.200000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 49.335574
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 44.788943
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 38.633113
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 31.105267
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 22.920568
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 12.878260
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 5.198118
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.473657
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 10.000000 , lon: 10.000912 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 10.000000 , lon: 10.000912 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 50.472274
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 47.800611
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 41.522201
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 34.854729
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 27.052601
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 18.482748
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 8.455866
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 2.107674
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.440566
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 10.000449 , lon: 10.000912 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 10.000449 , lon: 10.000912 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 49.565910
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 48.230228
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 43.220728
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 37.053588
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 29.539902
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 21.069269
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 10.839312
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 3.624770
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.143018
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+DEBUG: drone_GUIDED.py: drone_GUIDED: startMission: 201: 			Next location lat: 10.000898 , lon: 10.000912 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 130: 			Target location lat: 10.000898 , lon: 10.000912 , alt: 30.000000
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 49.895198
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 48.025179
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 42.403469
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 35.980190
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 28.343688
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 19.805656
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 9.653543
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 2.896851
+DEBUG: drone_GUIDED.py: drone_GUIDED: goto: 140: 			mode: GUIDED
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 144: 			Distance to target: 0.276716
+INFO: drone_GUIDED.py: drone_GUIDED: goto: 147: 			Reached target
+INFO: drone_GUIDED.py: drone_GUIDED: startMission: 204: 			Dropping Seed
+CRITICAL: drone_GUIDED.py: drone_GUIDED: <module>: 281: 			Return to launch
+INFO: drone_GUIDED.py: drone_GUIDED: <module>: 288: 			Close vehicle object
+INFO: drone_GUIDED.py: drone_GUIDED: <module>: 295: 			Completed...
