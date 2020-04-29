@@ -152,7 +152,7 @@ parsingVAR = argparse.ArgumentParser(description=' Seed Plantation using drone.'
 parsingVAR.add_argument('--connect', help="simDRONE connection string. SITL is automatically started if connection string not specified.")
 argsVAR = parsingVAR.parse_args()
 userConString = argsVAR.connect
-sitl = None
+sitlSIM = None
 
 
 #Start the SITL is user do not specify the connection string for the drone
