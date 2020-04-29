@@ -8,6 +8,7 @@
 
 #### DroneKit-Python and the dronekit-sitl simulator are installed from pip on all platforms. On Linux you will first need to install pip and python-dev: 
 `sudo apt-get install python-pip python-dev`
+
 `pip install dronekit`
 
 #### Install DroneKit – SITL:
