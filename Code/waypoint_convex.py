@@ -10,39 +10,36 @@ class LAT_LON:
 		self.lon = x
 		self.lat = y
 
-def get_location_metres(original_location, dNorth, dEast):
+def calNewGeoLocationNE(initialPOINT, yNORTH, xEAST):
 	"""
-	Returns a LAT_LON object containing the latitude/longitude `dNorth` and `dEast` metres from the specified `original_location`.
-	The function is useful when you want to move the vehicle around specifying locations relative to the current vehicle position.
-	This function is relatively accurate over small distances (10m within 1km) except close to the poles.
-	Reference:
-	http://gis.stackexchange.com/questions/2951/algorithm-for-offsetting-a-latitude-longitude-by-some-amount-of-meters
 
-	"""
-	#Radius of "spherical" earth
-	earth_radius=6378137.0
-
-	#Coordinate offsets in radians
-	dLat = dNorth/earth_radius
-	dLon = dEast/(earth_radius*math.cos(math.pi*original_location.lat/180))
-
-	#New position in decimal degrees
-	newlat = original_location.lat + (dLat * 180/math.pi)
-	newlon = original_location.lon + (dLon * 180/math.pi)
-	new_location = LAT_LON(newlon,newlat)
-	return new_location
-
-def get_distance_metres(aLocation1, aLocation2):
-	"""
-	Returns the ground distance in metres between two LAT_LON objects.
-	This method is an approximation, and will not be accurate over large distances and close to the earth's poles.
-	Reference:
-	https://github.com/diydrones/ardupilot/blob/master/Tools/autotest/common.py
+	This function is used to calculate new GEO Point which is 'y' meters north and 'x' meters east of a Reference point.
+	Knowing the lat/long of reference point and y and x distance , it returns a POINT class object with new location lat/long value.
+	This function is an approximation therefore valid over small distances (1m to 1km). It is not valid when calculating points close to the earth poles.
 
 	"""
-	dlat = aLocation2.lat - aLocation1.lat
-	dlong = aLocation2.lon - aLocation1.lon
-	return math.sqrt((dlat*dlat) + (dlong*dlong)) * 1.113195e5
+	#Radius of earth
+	earthRad=6378137.0
+
+	#New point offset calculated in radian
+	tempLAT = yNORTH/earthRad
+	tempLON = xEAST/(earthRad*math.cos(math.pi*initialPOINT.lat/180))
+
+	#Now calculate the new point in decimal degrees
+	finalLAT = initialPOINT.lat + (tempLAT * 180/math.pi)
+	finalLON = initialPOINT.lon + (tempLON * 180/math.pi)
+	finalLOCATION = LAT_LON(finalLON,finalLAT)
+	return finalLOCATION
+
+def distanceBetweenTwoGeoPoints(locPOINT1, locPOINT2):
+	"""
+	This function calulates the ground distance between two points.
+	This function is a approximation therefore valid for only short distance.
+
+	"""
+	disLatitude = locPOINT2.lat - locPOINT1.lat
+	disLongitude = locPOINT2.lon - locPOINT1.lon
+	return math.sqrt((disLatitude*disLatitude) + (disLongitude*disLongitude)) * 1.113195e5
 
 def generate_points(start_point,edge_size,seed_distance,polygon_hull):
 
@@ -56,25 +53,25 @@ def generate_points(start_point,edge_size,seed_distance,polygon_hull):
 	for i in range (step_size/2):
 		func_tempVar2 = func_tempVar1
 		for j in range(step_size):
-			func_newpoint = get_location_metres(func_tempVar2, seed_distance, 0)
+			func_newpoint = calNewGeoLocationNE(func_tempVar2, seed_distance, 0)
 			func_tempVar2 = func_newpoint
 			shapely_tempVar1 = Point(func_tempVar2.lon,func_tempVar2.lat)
 			if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
 				output_file.write(str(func_tempVar2.lat) + "," + str(func_tempVar2.lon) + '\n')
-		func_shift1 = get_location_metres(func_tempVar2, 0, seed_distance)
+		func_shift1 = calNewGeoLocationNE(func_tempVar2, 0, seed_distance)
 		func_tempVar2 = func_shift1
 		shapely_tempVar1 = Point(func_tempVar2.lon,func_tempVar2.lat)
 		if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
 			output_file.write(str(func_tempVar2.lat) + "," + str(func_tempVar2.lon) + '\n')
 
 		for j in range(step_size):
-			func_newpoint = get_location_metres(func_tempVar2, -seed_distance, 0)
+			func_newpoint = calNewGeoLocationNE(func_tempVar2, -seed_distance, 0)
 			func_tempVar2 = func_newpoint
 			shapely_tempVar1 = Point(func_tempVar2.lon,func_tempVar2.lat)
 			if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
 				output_file.write(str(func_tempVar2.lat) + "," + str(func_tempVar2.lon) + '\n')
 
-		func_shift2 = get_location_metres(func_tempVar2, 0, seed_distance)
+		func_shift2 = calNewGeoLocationNE(func_tempVar2, 0, seed_distance)
 		func_tempVar1 = func_shift2
 		shapely_tempVar1 = Point(func_tempVar1.lon,func_tempVar1.lat)
 		if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
@@ -82,7 +79,7 @@ def generate_points(start_point,edge_size,seed_distance,polygon_hull):
 
 
 	for j in range(step_size):
-		func_newpoint = get_location_metres(func_tempVar1, seed_distance, 0)
+		func_newpoint = calNewGeoLocationNE(func_tempVar1, seed_distance, 0)
 		func_tempVar1 = func_newpoint
 		shapely_tempVar1 = Point(func_tempVar1.lon,func_tempVar1.lat)
 		if (polygon_hull.contains(shapely_tempVar1) or shapely_tempVar1.within(polygon_hull) or polygon_hull.touches(shapely_tempVar1) ):
@@ -142,7 +139,7 @@ t3 = LAT_LON(max_col[0],min_col[1])
 
 
 
-cal_d = max(get_distance_metres(t1,t2),get_distance_metres(t1,t3))
+cal_d = max(distanceBetweenTwoGeoPoints(t1,t2),distanceBetweenTwoGeoPoints(t1,t3))
 # print(cal_d)
 total_step = math.ceil(cal_d/seed_distance)
 # print(total_step)

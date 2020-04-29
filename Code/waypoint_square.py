@@ -4,42 +4,38 @@ import math
 class POINT:
 	def __init__(self,x,y):
 		self.lat = x
-		self.lon =y
+		self.lon = y
 
-def get_location_metres(original_location, dNorth, dEast):
+def calNewGeoLocationNE(initialPOINT, yNORTH, xEAST):
 	"""
-	Returns a POINT object containing the latitude/longitude `dNorth` and `dEast` metres from the specified `original_location`.
-	The function is useful when you want to move the vehicle around specifying locations relative to the current vehicle position.
-	This function is relatively accurate over small distances (10m within 1km) except close to the poles.
-	Reference:
-	http://gis.stackexchange.com/questions/2951/algorithm-for-offsetting-a-latitude-longitude-by-some-amount-of-meters
 
-	"""
-	#Radius of "spherical" earth
-	earth_radius=6378137.0
-
-	#Coordinate offsets in radians
-	dLat = dNorth/earth_radius
-	dLon = dEast/(earth_radius*math.cos(math.pi*original_location.lat/180))
-
-	#New position in decimal degrees
-	newlat = original_location.lat + (dLat * 180/math.pi)
-	newlon = original_location.lon + (dLon * 180/math.pi)
-	new_location = POINT(newlat,newlon)
-	return new_location
-
-def get_distance_metres(aLocation1, aLocation2):
-	"""
-	Returns the ground distance in metres between two POINT objects.
-	This method is an approximation, and will not be accurate over large distances and close to the earth's poles.
-	Reference:
-	https://github.com/diydrones/ardupilot/blob/master/Tools/autotest/common.py
+	This function is used to calculate new GEO Point which is 'y' meters north and 'x' meters east of a Reference point.
+	Knowing the lat/long of reference point and y and x distance , it returns a POINT class object with new location lat/long value.
+	This function is an approximation therefore valid over small distances (1m to 1km). It is not valid when calculating points close to the earth poles.
 
 	"""
-	dlat = aLocation2.lat - aLocation1.lat
-	dlong = aLocation2.lon - aLocation1.lon
-	return math.sqrt((dlat*dlat) + (dlong*dlong)) * 1.113195e5
+	#Radius of earth
+	earthRad=6378137.0
 
+	#New point offset calculated in radian
+	tempLAT = yNORTH/earthRad
+	tempLON = xEAST/(earthRad*math.cos(math.pi*initialPOINT.lat/180))
+
+	#Now calculate the new point in decimal degrees
+	finalLAT = initialPOINT.lat + (tempLAT * 180/math.pi)
+	finalLON = initialPOINT.lon + (tempLON * 180/math.pi)
+	finalLOCATION = POINT(finalLAT,finalLON)
+	return finalLOCATION
+
+def distanceBetweenTwoGeoPoints(locPOINT1, locPOINT2):
+	"""
+	This function calulates the ground distance between two points.
+	This function is a approximation therefore valid for only short distance.
+
+	"""
+	disLatitude = locPOINT2.lat - locPOINT1.lat
+	disLongitude = locPOINT2.lon - locPOINT1.lon
+	return math.sqrt((disLatitude*disLatitude) + (disLongitude*disLongitude)) * 1.113195e5
 
 def generate_points(aLocation,aSize,seed_distance):
 	"""
@@ -57,32 +53,28 @@ def generate_points(aLocation,aSize,seed_distance):
 
 
 	f = open("waypoint_square.txt","w+")
-	point1 = get_location_metres(aLocation, -aSize, -aSize)
-	point2 = get_location_metres(aLocation, aSize, -aSize)
-	point3 = get_location_metres(aLocation, aSize, aSize)
-	point4 = get_location_metres(aLocation, -aSize, aSize)
-	temp1 = point1
+	temp1 = calNewGeoLocationNE(aLocation, -aSize, -aSize)
 	f.write(str(temp1.lat) + "," + str(temp1.lon) + '\n')
 	for i in range (aSize/seed_distance):
 		temp2 = temp1
 		for j in range(2*aSize/seed_distance):
-			newpoint = get_location_metres(temp2, seed_distance, 0)
+			newpoint = calNewGeoLocationNE(temp2, seed_distance, 0)
 			temp2 = newpoint
 			f.write(str(temp2.lat) + "," + str(temp2.lon) + '\n')
-		shift1 = get_location_metres(temp2, 0, seed_distance)
+		shift1 = calNewGeoLocationNE(temp2, 0, seed_distance)
 		temp2  = shift1
 		f.write(str(temp2.lat) + "," + str(temp2.lon) + '\n')
 
 
 		for j in range(2*aSize/seed_distance):
-			newpoint = get_location_metres(temp2, -seed_distance, 0)
+			newpoint = calNewGeoLocationNE(temp2, -seed_distance, 0)
 			temp2 = newpoint
 			f.write(str(temp2.lat) + "," + str(temp2.lon) + '\n')
-		shift2 = get_location_metres(temp2, 0, seed_distance)
+		shift2 = calNewGeoLocationNE(temp2, 0, seed_distance)
 		temp1 = shift2
 		f.write(str(temp1.lat) + "," + str(temp1.lon) + '\n')
 	for j in range(2*aSize/seed_distance):
-			newpoint = get_location_metres(temp1, seed_distance, 0)
+			newpoint = calNewGeoLocationNE(temp1, seed_distance, 0)
 			temp1 = newpoint
 			f.write(str(temp1.lat) + "," + str(temp1.lon) + '\n')
 
