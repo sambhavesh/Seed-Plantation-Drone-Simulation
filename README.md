@@ -37,7 +37,8 @@ Download the latest deb file for your machine from:
 Above command runs the start the simulation with copter at home location (latitude = 10.0 and longitude = 20.0 in above command) and 0 and 180 are copter parameters like model etc. It starts the SITL connection at: tcp:127.0.0.1:5760  
  
 #### b) Use MavProxy to replicate the connection to other links like: 
-`mavproxy.py --master tcp:127.0.0.1:5760 --sitl 127.0.0.1:5501 --out 127.0.0.1:14550 --out 127.0.0.1:14551` 
+`mavproxy.py --master tcp:127.0.0.1:5760 --sitl 127.0.0.1:5501 --out 127.0.0.1:14550 --out 127.0.0.1:14551`
+
 APM Planner should automatically connect to one of the out links from above command. 
  
 #### c) Now run the required python drone script drone_AUTO.py or drone_GUIDED.py as follows: 
