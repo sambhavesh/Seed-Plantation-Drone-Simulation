@@ -2,159 +2,138 @@
 # -*- coding: utf-8 -*-
 
 from __future__ import print_function
-from dronekit import connect, Command, VehicleMode, LocationGlobalRelative
+from dronekit import connect, VehicleMode, LocationGlobalRelative, Command
 from pymavlink import mavutil
 import os
-import json, urllib, math
+import json
+import urllib
+import math
 import time
+import argparse
 import logging , logging.handlers
 
 #----------------------------------------------------------------------------------------------------------------------------------
 #logging configuration:
 
 logging.basicConfig(filename = "Master.log" , level = logging.DEBUG , format = "%(levelname)s: %(filename)s: %(funcName)s: %(lineno)d: 			%(message)s")
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
-logFile_handler = logging.FileHandler("drone_seed_AUTO.log")
-logFile_handler.setLevel(logging.DEBUG)
+logVAR = logging.getLogger(__name__)
+logVAR.setLevel(logging.DEBUG)
+logFileHand = logging.FileHandler("drone_seed_AUTO.log")
+logFileHand.setLevel(logging.DEBUG)
 logFile_streamHandler = logging.StreamHandler()
 logFile_streamHandler.setLevel(logging.ERROR)
-logging_formatter = logging.Formatter("%(levelname)s: %(filename)s: %(funcName)s: %(lineno)d: 			%(message)s")
-logFile_handler.setFormatter(logging_formatter)
-logFile_streamHandler.setFormatter(logging_formatter)
-logger.addHandler(logFile_handler)
-logger.addHandler(logFile_streamHandler)
+logForVAR = logging.Formatter("%(levelname)s: %(filename)s: %(funcName)s: %(lineno)d: 			%(message)s")
+logFileHand.setFormatter(logForVAR)
+logFile_streamHandler.setFormatter(logForVAR)
+logVAR.addHandler(logFileHand)
+logVAR.addHandler(logFile_streamHandler)
 
 #-------------------------------------------------------------------------------------------------------------------------------------
 #Required function defination:
 
-def get_distance_metres(aLocation1, aLocation2):
+def distanceBetweenTwoGeoPoints(locPOINT1, locPOINT2):
 	"""
-	Returns the ground distance in metres between two LocationGlobal objects.
-	This method is an approximation, and will not be accurate over large distances and close to the
-	earth's poles.
-	Reference:
-	https://github.com/diydrones/ardupilot/blob/master/Tools/autotest/common.py
-	"""
-	dlat = aLocation2.lat - aLocation1.lat
-	dlong = aLocation2.lon - aLocation1.lon
-	return math.sqrt((dlat*dlat) + (dlong*dlong)) * 1.113195e5
+	This function calulates the ground distance between two points.
+	This function is a approximation therefore valid for only short distance.
 
-def distance_to_current_waypoint():
 	"""
-	Gets distance in metres to the current waypoint.
-	It returns None for the first waypoint (Home location).
+	disLatitude = locPOINT2.lat - locPOINT1.lat
+	disLongitude = locPOINT2.lon - locPOINT1.lon
+	return math.sqrt((disLatitude*disLatitude) + (disLongitude*disLongitude)) * 1.113195e5
+
+def calculateDistanceToCurrentPoint():
 	"""
-	nextwaypoint = vehicle.commands.next
-	if nextwaypoint==0:
+	This function returns the distance to the current waypoint in meters.
+	If Home Location is given as input the function returns None
+
+	"""
+	nextVehCommandInt = simDRONE.commands.next
+	if nextVehCommandInt==0:
 		return None
-	missionitem=vehicle.commands[nextwaypoint-1] #commands are zero indexed
-	lat = missionitem.x
-	lon = missionitem.y
-	alt = missionitem.z
-	targetWaypointLocation = LocationGlobalRelative(lat,lon,alt)
-	distancetopoint = get_distance_metres(vehicle.location.global_frame, targetWaypointLocation)
-	return distancetopoint
+	nextVehCommand=simDRONE.commands[nextVehCommandInt-1] #zero index
+	latitute = nextVehCommand.x
+	longitude = nextVehCommand.y
+	altitude = nextVehCommand.z
+	nextPointLoc = LocationGlobalRelative(latitute,longitude,altitude)
+	disPoint = distanceBetweenTwoGeoPoints(simDRONE.location.global_frame, nextPointLoc)
+	return disPoint
 
 
-def arm_and_takeoff(aTargetAltitude):
+def armVehicleThenTakeOFF(flyingALT):
 	"""
-	Arms vehicle and fly to a target altitude.
+	This function takes a altitude as a parameter then arms the simulated drone and then fly to the given altitude.
+
 	"""
 
-	# Don't try to arm until autopilot is ready
-	while not vehicle.is_armable:
-		logger.warning("Waiting for vehicle to initialise...")
-		time.sleep(1)
-	# Set mode to GUIDED for arming and takeoff:
-	while (vehicle.mode.name != "GUIDED"):
-		vehicle.mode = VehicleMode("GUIDED")
-		time.sleep(0.1)
-	# Confirm vehicle armed before attempting to take off
-	while not vehicle.armed:
-		vehicle.armed = True
-		logger.warning("Waiting for arming...")
-		time.sleep(1)
-	print("Taking off!")
-	logger.info("Taking off!")
-	vehicle.simple_takeoff(aTargetAltitude) # Take off to target altitude
+	# Wait for autopilot to get ready
+	while not simDRONE.is_armable:
+		logVAR.warning("Waiting for drone to get ready -----")
+		time.sleep(1.0)
 
-	# Wait until the vehicle reaches a safe height
-	# before allowing next command to process.
+	# Change the mode of drone to GUIDED :
+	while (simDRONE.mode.name != "GUIDED"):
+		simDRONE.mode = VehicleMode("GUIDED")
+		time.sleep(0.2)
+	# Now we confirm that simulated drone is armed before taking off
+	while not simDRONE.armed:
+		simDRONE.armed = True
+		logVAR.warning("Wait for simulated drone to get armed")
+		time.sleep(0.5)
+
+	print("Simulate Drone is taking off..")
+	logVAR.info("Simulate Drone is taking off..")
+	simDRONE.simple_takeoff(flyingALT)
+
+	# Now we add a check to see whether drone has reached the safe height:
+
 	while True:
-		requiredAlt = aTargetAltitude*0.95
-		#Break and return from function just below target altitude.
-		if vehicle.location.global_relative_frame.alt>=requiredAlt:
-			print("Reached target altitude of %f" % (aTargetAltitude))
-			logger.info("Reached target altitude of %f" % (aTargetAltitude))
+		height = flyingALT*0.95
+		if simDRONE.location.global_relative_frame.alt >= height:
+			print("Drone has reached the height of %f" % (flyingALT))
+			logVAR.info("Drone has reached the height of %f" % (flyingALT))
 			break
-		logger.info("Altitude: %f < %f" % (vehicle.location.global_relative_frame.alt,requiredAlt))
-		time.sleep(1)
+		logVAR.info("Height: %f < %f" % (simDRONE.location.global_relative_frame.alt,height))
+		time.sleep(1.0)
 
-def print_vehicle_attributes():
-	"""
-	This function list all the attributes of the vehicle and stores it in log file
-	"""
-	logger.info("Autopilot Firmware version: %s" % vehicle.version)
-	logger.info("Autopilot capabilities (supports ftp): %s" % vehicle.capabilities.ftp)
-	logger.info("Global Location: %s" % vehicle.location.global_frame)
-	logger.info("Global Location (relative altitude): %s" % vehicle.location.global_relative_frame)
-	logger.info("Local Location: %s" % vehicle.location.local_frame)
-	logger.info("Attitude: %s" % vehicle.attitude)
-	logger.info("Velocity: %s" % vehicle.velocity)
-	logger.info("GPS: %s" % vehicle.gps_0)
-	logger.info("Groundspeed: %s" % vehicle.groundspeed)
-	logger.info("Airspeed: %s" % vehicle.airspeed)
-	logger.info("Gimbal status: %s" % vehicle.gimbal)
-	logger.info("Battery: %s" % vehicle.battery)
-	logger.info("EKF OK?: %s" % vehicle.ekf_ok)
-	logger.info("Last Heartbeat: %s" % vehicle.last_heartbeat)
-	logger.info("Rangefinder: %s" % vehicle.rangefinder)
-	logger.info("Rangefinder distance: %s" % vehicle.rangefinder.distance)
-	logger.info("Rangefinder voltage: %s" % vehicle.rangefinder.voltage)
-	logger.info("Heading: %s" % vehicle.heading)
-	logger.info("Is Armable?: %s" % vehicle.is_armable)
-	logger.info("System status: %s" % vehicle.system_status.state)
-	logger.info("Mode: %s" % vehicle.mode.name)
-	logger.info("Armed: %s" % vehicle.armed)
 
-def print_vehicle_parameters():
+
+def print_simDRONE_parameters():
 	"""
-	This function list all the parameters of the vehicle and stores it in log file
+	This function list all the parameters of the simulated drone and stores it in log file
 	"""
-	logger.info ("Print all parameters (`vehicle.parameters`):")
-	for key, value in vehicle.parameters.iteritems():
-		logger.info (" Key:%s Value:%s" % (key,value))
+	logVAR.info ("Listing all the current simulated drone parameters (`simDRONE.parameters`):")
+	for para, ivalue in simDRONE.parameters.iteritems():
+		logVAR.info (" Parameter : %s Current Value : %s" % (para,ivalue))
 
 #-------------------------------------------------------------------------------------------------------------------------------------
 #Main body:
 
-start_lat = 0.0		#latitute variable
-start_lon = 0.0		#longitude variable
-start_alt = 0.0		#altitude variable
+startingLatitude = 0.0		#latitute variable
+startingLongitude = 0.0		#longitude variable
+startingAltitude = 0.0		#altitude variable
 waypoint_file = ""	#stores the waypoint file name
 
 #Takes the lat lon and alt value from USER
 while True:
 	try:
-		start_lat = float(input("Please enter the latitute of starting point:\n"))
-		logger.debug("USER entered latitute value: %s",str(start_lat))
-		if(start_lat<0 or start_lat>90):
+		startingLatitude = float(input("Please enter the latitute of starting point:\n"))
+		logVAR.debug("USER entered latitute value: %s",str(startingLatitude))
+		if(startingLatitude<0 or startingLatitude>90):
 			print("Latitude value must be between 0 and 90")
 			continue
-		start_lon = float(input("Please enter the longitude of starting point:\n"))
-		logger.debug("USER entered longitude value: %s",str(start_lon))
-		if(start_lon<0 or start_lon>180):
+		startingLongitude = float(input("Please enter the longitude of starting point:\n"))
+		logVAR.debug("USER entered longitude value: %s",str(startingLongitude))
+		if(startingLongitude<0 or startingLongitude>180):
 			print("Langitude value must be between 0 and 180")
 			continue
-		start_alt = float(input("Please enter the altitude for the drone:\n"))
-		logger.debug("USER entered altitude value: %s",str(start_alt))
-		if(start_alt<0):
+		startingAltitude = float(input("Please enter the altitude for the drone:\n"))
+		logVAR.debug("USER entered altitude value: %s",str(startingAltitude))
+		if(startingAltitude<0):
 			print("Altitude value must be positive")
 			continue
 		break
 	except:
-		logger.error("Oops!  That was no valid lat/lon or altitude.  Try again...")
+		logVAR.error("Oops!  That was no valid lat/lon or altitude.  Try again...")
 
 #Takes the waypoint file name from USER
 while True:
@@ -163,45 +142,44 @@ while True:
 		break
 	else:
 		print("Enter file does not exists. Please re enter correct file")
-		logger.error("Enter file does not exists.")
+		logVAR.error("Enter file does not exists.")
 		continue
 
 
-#Set up option parsing to get connection string
-import argparse
-parser = argparse.ArgumentParser(description='Demonstrates Seed Plantation Mission.')
-parser.add_argument('--connect', help="vehicle connection target string. If not specified, SITL automatically started and used.")
-args = parser.parse_args()
-connection_string = args.connect
+#Now we set up parsing to  get the connection string from user
+
+parsingVAR = argparse.ArgumentParser(description=' Seed Plantation using drone.')
+parsingVAR.add_argument('--connect', help="simDRONE connection string. SITL is automatically started if connection string not specified.")
+argsVAR = parsingVAR.parse_args()
+userConString = argsVAR.connect
 sitl = None
 
 
-#Start SITL if no connection string specified
-if not connection_string:
+#Start the SITL is user do not specify the connection string for the drone
+if not userConString:
 	import dronekit_sitl
-	sitl = dronekit_sitl.start_default(lat=start_lat,lon=start_lon)
-	connection_string = sitl.connection_string()
+	sitlSIM = dronekit_sitl.start_default(lat=startingLatitude,lon=startingLongitude)
+	userConString = sitlSIM.connection_string()
 
-# Connect to the Vehicle
-print('Connecting to vehicle on: %s' % connection_string)
-logger.info('Connecting to vehicle on: %s' % connection_string)
-vehicle = connect(connection_string, wait_ready=True)
+# Now connect to the simulated drone
+print('Connecting to simulated drone on: %s' % userConString)
+logVAR.info('Connecting to simulated drone on: %s' % userConString)
+simDRONE = connect(userConString, wait_ready=True)
 
-#log vehicle attributes:
-print_vehicle_attributes()
-#log vehicle parameters:
-print_vehicle_parameters()
 
-# Now download the vehicle waypoints
-cmds = vehicle.commands
-cmds.wait_ready()
-cmds = vehicle.commands
-cmds.clear()
+#log drone parameters:
+print_simDRONE_parameters()
+
+# Download the simulated drone commands
+droneCMDS = simDRONE.commands
+droneCMDS.wait_ready()
+droneCMDS = simDRONE.commands
+droneCMDS.clear()
 line_count = 0    #Variable that keep track of total commands
 
 #Add command for starting location:
-cmd = Command( 0,0,0,mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT,mavutil.mavlink.MAV_CMD_NAV_WAYPOINT,0, 0, 0, 0, 0, 0,start_lat, start_lon,start_alt)
-cmds.add(cmd)
+droneCMD = Command( 0, 0, 0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT , mavutil.mavlink.MAV_CMD_NAV_WAYPOINT , 0, 0, 0, 0, 0, 0,startingLatitude, startingLongitude,startingAltitude)
+droneCMDS.add(droneCMD)
 
 #Add command for all waypoints:
 with open(waypoint_file,"r") as way_p:
@@ -210,9 +188,9 @@ with open(waypoint_file,"r") as way_p:
 		line_count +=1
 		lat = float(current_line[0])
 		lon = float(current_line[1])
-		logger.debug ("Point: %f %f" %(lat, lon))
-		cmd = Command( 0,0,0,mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT,mavutil.mavlink.MAV_CMD_NAV_WAYPOINT,0, 0, 5, 0, 0, 0,lat, lon, start_alt)
-		cmds.add(cmd)
+		logVAR.debug ("Point: %f %f" %(lat, lon))
+		droneCMD = Command( 0, 0, 0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT , mavutil.mavlink.MAV_CMD_NAV_WAYPOINT , 0, 0, 5, 0, 0, 0,lat, lon, startingAltitude)
+		droneCMDS.add(droneCMD)
 		""""
 		Add the codes/ mechanism for dropping seed here. Depends on hardware
 
@@ -220,59 +198,59 @@ with open(waypoint_file,"r") as way_p:
 way_p.close()
 
 #Add command for returing to base:
-cmd = Command( 0,0,0,mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT,mavutil.mavlink.MAV_CMD_NAV_WAYPOINT,0, 0, 0, 0, 0, 0,start_lat, start_lon,start_alt)
-cmds.add(cmd)
+droneCMD = Command( 0, 0, 0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, mavutil.mavlink.MAV_CMD_NAV_WAYPOINT,0, 0, 0, 0, 0, 0,startingLatitude, startingLongitude,startingAltitude)
+droneCMDS.add(droneCMD)
 
-#Upload clear message and command messages to vehicle.
-print("Uploading waypoints to vehicle..." )
-logger.info("Uploading waypoints to vehicle...")
-cmds.upload()
-print("Arm and Takeoff")
-logger.info("Arm and Takeoff")
-arm_and_takeoff(start_alt)
+# Now we upload all the waypoints to our simulated drone.
+print("Upload points to simulated drone..." )
+logVAR.info("Upload points to simulated drone...")
+droneCMDS.upload()
+print("Drone is arming and taking off:")
+logVAR.info("Drone is arming and taking off:")
+armVehicleThenTakeOFF(startingAltitude)
 
-print("Starting mission")
-logger.info("Starting mission")
+print("Starting Seed Plantation mission")
+logVAR.info("Starting Seed Plantation mission")
 
-# Reset mission set to first (0) waypoint
-vehicle.commands.next=0
+# Reset command to first point i.e 0
+simDRONE.commands.next=0
 
-# Set mode to AUTO to start mission:
-while (vehicle.mode.name != "AUTO"):
-	vehicle.mode = VehicleMode("AUTO")
+# To start the mission set the drone MODE to AUTO:
+while (simDRONE.mode.name != "AUTO"):
+	simDRONE.mode = VehicleMode("AUTO")
 	time.sleep(0.1)
 
 
 # Monitor mission then RTL (Return to launch) and quit:
 while True:
-	nextwaypoint=vehicle.commands.next
-	print('Distance to waypoint (%s): %s' % (nextwaypoint, distance_to_current_waypoint()))
-	logger.info('Distance to waypoint (%s): %s' % (nextwaypoint, distance_to_current_waypoint()))
-	if distance_to_current_waypoint()<1.5:
+	nextVehCommandInt = simDRONE.commands.next
+	print('Distance to next seed drop point (%s): %s' % (nextVehCommandInt, calculateDistanceToCurrentPoint()))
+	logVAR.info('Distance to next seed drop point (%s): %s' % (nextVehCommandInt, calculateDistanceToCurrentPoint()))
+	if calculateDistanceToCurrentPoint()<1.5:
 		print("Dropping Seed")
-		logger.critical("Dropping Seed")
-	if nextwaypoint==line_count+1:
-		print("Exit 'standard' mission when start heading to final waypoint or start location")
-		logger.info("Exit 'standard' mission when start heading to final waypoint or start location")
+		logVAR.critical("Dropping Seed")
+	if nextVehCommandInt==line_count+1:
+		print("Drone is heading to start location or launch location")
+		logVAR.info("Drone is heading to start location or launch location")
 		break;
 	time.sleep(1)
 
-print('Return to launch')
-logger.critical("Return to launch")
-while (vehicle.mode.name != "RTL"):
-	vehicle.mode = VehicleMode("RTL")
+print('Return to base/helipad')
+logVAR.critical("Return to base/helipad")
+while (simDRONE.mode.name != "RTL"):
+	simDRONE.mode = VehicleMode("RTL")
 	time.sleep(0.1)
 
-#Close vehicle object before exiting script
-print("Close vehicle object")
-logger.info("Close vehicle object")
-vehicle.close()
+#Close simulated drone object before terminating script
+print("Close simulated drone object")
+logVAR.info("Close simulated drone object")
+simDRONE.close()
 
-# Shut down simulator if it was started.
-if sitl is not None:
-	sitl.stop()
-print("Completed...")
-logger.info("Completed...")
+# Shut down simulator
+if sitlSIM is not None:
+	sitlSIM.stop()
+print("Seed Plantation Completed...")
+logVAR.info("Seed Plantation Completed...")
 
 '''
 sample input:
