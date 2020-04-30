@@ -2,7 +2,7 @@
 # Seed-Plantation-Drone-Simulation
 In this project work, we have designed an algorithm to spray seeds at regular intervals in fields through drone whose parameters are provided by the user.
 This required the calculation of Waypoints which define the traversal of the drone across the land.
-The time complexity of the proposed algorithm for the calculation of Waypoints is `O((l/d)^2)` where l is the side of the fitted square and d is the distance between seeds dropped. So basically the proposed algorithm works in O(n^2).
+The time complexity of the proposed algorithm for the calculation of Waypoints is `O((l/d)^2)` where l is the side of the fitted square and d is the distance between seeds dropped.
 
 ### Installation Guide
 Walkthrough to set up the PC for successful execution 
