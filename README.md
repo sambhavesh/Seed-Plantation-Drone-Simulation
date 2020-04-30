@@ -1,7 +1,10 @@
+
+# Seed-Plantation-Drone-Simulation
 In this project work, we have designed an algorithm to spray seeds at regular intervals in fields through drone whose parameters are provided by the user. 
 The time complexity of the proposed algorithm is O((l/d)^2) where l is the side of the fitted square and d is the distance between seeds dropped. So basically the proposed algorithm works in O(n^2).
 
-# Seed-Plantation-Drone-Simulation
+### Installation Guide
+Walkthrough to set up the PC for successful execution 
 
 #### Install the package updates on your linux system:
 `sudo apt-get update`
